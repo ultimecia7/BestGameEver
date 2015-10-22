@@ -329,7 +329,8 @@ private extension StickHeroGameScene {
     func loadScore() {
         let scoreBand = SKLabelNode(fontNamed: "Arial")
         scoreBand.name = StickHeroGameSceneChildName.ScoreName.rawValue
-        scoreBand.text = "0"
+        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
+        scoreBand.text = "HighScore:"+String(highScore)
         scoreBand.position = CGPointMake(0, DefinedScreenHeight / 2 - 200)
         scoreBand.fontColor = SKColor.whiteColor()
         scoreBand.fontSize = 100
@@ -340,7 +341,7 @@ private extension StickHeroGameScene {
     }
     
     func loadScoreBackground() {
-        let back = SKShapeNode(rect: CGRectMake(0-120, 1024-200-30, 240, 140), cornerRadius: 20)
+        let back = SKShapeNode(rect: CGRectMake(-360, 794, 720, 140), cornerRadius: 20)
         back.zPosition = StickHeroGameSceneZposition.ScoreBackgroundZposition.rawValue
         back.fillColor = SKColor.blackColor().colorWithAlphaComponent(0.3)
         back.strokeColor = SKColor.blackColor().colorWithAlphaComponent(0.3)
@@ -417,8 +418,9 @@ private extension StickHeroGameScene {
         let width:CGFloat = CGFloat(randomInRange(min...max) * 10)
         let height:CGFloat = StackHeight
         let stack = SKShapeNode(rectOfSize: CGSizeMake(width, height))
-        stack.fillColor = SKColor.blackColor()
+        stack.fillColor = SKColor.whiteColor()
         stack.strokeColor = SKColor.blackColor()
+        stack.fillTexture = SKTexture(imageNamed: "wdy.png");
         stack.zPosition = StickHeroGameSceneZposition.StackZposition.rawValue
         stack.name = StickHeroGameSceneChildName.StackName.rawValue
  

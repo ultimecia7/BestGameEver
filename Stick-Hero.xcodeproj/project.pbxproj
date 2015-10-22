@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; settings = {ASSET_TAGS = (); }; };
 		730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */; };
 		730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730ED6DF1B3BA6FD0041F888 /* Defined.swift */; };
 		731F6F4A1B3D001100B8D89A /* button_retry_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 731F6F481B3D001100B8D89A /* button_retry_up.png */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35F586041BD6813900A94329 /* wdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy.png; sourceTree = "<group>"; };
 		730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch_mid.wav; sourceTree = "<group>"; };
 		730ED6DF1B3BA6FD0041F888 /* Defined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
 		731F6F481B3D001100B8D89A /* button_retry_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_retry_up.png; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				731F6F4B1B3D041600B8D89A /* button_retry_down.png */,
+				35F586041BD6813900A94329 /* wdy.png */,
 				731F6F481B3D001100B8D89A /* button_retry_up.png */,
 				73DBBA9B1B3913D00050C4EF /* stick_background.jpg */,
 				733263DE1B33C5E9003A3B2F /* human1.png */,
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					73B7AD561B33BEC400115CAD = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4C8Y4M27UL;
 					};
 				};
 			};
@@ -228,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				731F6F521B3D0E3B00B8D89A /* StarExplosion.sks in Resources */,
+				35F586051BD6813900A94329 /* wdy.png in Resources */,
 				730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */,
 				733263DB1B33C592003A3B2F /* kick.wav in Resources */,
 				733263E11B33C5E9003A3B2F /* human2.png in Resources */,
@@ -372,10 +377,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "koofrank.ios.Stick-Hero";
+				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -383,10 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "koofrank.ios.Stick-Hero";
+				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
