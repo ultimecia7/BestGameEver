@@ -35,20 +35,14 @@ class SignupViewController: UIViewController {
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.104/testreg.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.104/test.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
                     print("got an error: \(error)")
                     return
                 }
-                let resp = Response(JSONDecoder(response.data))
-                if let err = resp.error {
-                    print("got an error: \(err)")
-                }
-                if let status = resp.status {
-                    print("completed: \(status)")
-                }
+                let resp = response.data
             }
         }
         catch let error {

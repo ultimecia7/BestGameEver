@@ -9,6 +9,8 @@
 import UIKit
 import SpriteKit
 import AVFoundation
+import SwiftHTTP
+import JSONJoy
 
 class LoginViewController: UIViewController {
 
@@ -18,5 +20,8 @@ class LoginViewController: UIViewController {
     @IBAction func login(sender: UIButton) {
         let un = username.text!
         let pw = password.text!
+        
+        self.performSegueWithIdentifier("login", sender: self)
+        
     }
 }
