@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; settings = {ASSET_TAGS = (); }; };
+		0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */; };
+		0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */; };
+		0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */; };
+		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; };
 		730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */; };
 		730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730ED6DF1B3BA6FD0041F888 /* Defined.swift */; };
 		731F6F4A1B3D001100B8D89A /* button_retry_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 731F6F481B3D001100B8D89A /* button_retry_up.png */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		35F586041BD6813900A94329 /* wdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy.png; sourceTree = "<group>"; };
 		730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch_mid.wav; sourceTree = "<group>"; };
 		730ED6DF1B3BA6FD0041F888 /* Defined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
@@ -153,8 +159,11 @@
 				73B7AD8C1B33C22400115CAD /* Assets */,
 				733263D11B33C55B003A3B2F /* Scene */,
 				73B7AD5A1B33BEC400115CAD /* AppDelegate.swift */,
-				73B7AD601B33BEC400115CAD /* GameViewController.swift */,
 				73B7AD621B33BEC400115CAD /* Main.storyboard */,
+				73B7AD601B33BEC400115CAD /* GameViewController.swift */,
+				0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */,
+				0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */,
+				0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */,
 				73B7AD651B33BEC400115CAD /* Assets.xcassets */,
 				73B7AD671B33BEC400115CAD /* LaunchScreen.storyboard */,
 				73B7AD6A1B33BEC400115CAD /* Info.plist */,
@@ -260,10 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */,
 				73B7AD611B33BEC400115CAD /* GameViewController.swift in Sources */,
+				0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */,
 				733263E71B33C68D003A3B2F /* StickHeroGameScene.swift in Sources */,
 				73B7AD5B1B33BEC400115CAD /* AppDelegate.swift in Sources */,
 				730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */,
+				0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */,
 				73DBBA9E1B39377D0050C4EF /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

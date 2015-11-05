@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SpriteKit
+import AVFoundation
 
 class SignupViewController: UIViewController {
 

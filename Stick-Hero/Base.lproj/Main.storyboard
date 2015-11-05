@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DKf-Eq-9Pk">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
@@ -10,17 +11,190 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
-                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                        <viewControllerLayoutGuide type="top" id="yXa-YE-fWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="uaj-8Q-l7h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ik-de-qPn">
+                                <rect key="frame" x="215" y="221" width="39" height="30"/>
+                                <state key="normal" title="home"/>
+                                <connections>
+                                    <segue destination="eSw-wv-qCj" kind="modal" id="5YG-iR-RYJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="590" y="800"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="43s-I2-HLb">
+            <objects>
+                <viewController id="Nw0-Wm-FdO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bw7-8m-V8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ph-zU-vZr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Qu-dZ-GSq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTv-3Y-IeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="836.99999999999966"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="rVJ-1p-18v">
+            <objects>
+                <viewController id="eSw-wv-qCj" customClass="HomeViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="36b-wm-p1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="dfX-1z-lFm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HNv-kl-vKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-MF-qtm">
+                                <rect key="frame" x="0.0" y="232" width="600" height="30"/>
+                                <state key="normal" title="限时棍王"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-qI-3Sy">
+                                <rect key="frame" x="270" y="143" width="60" height="30"/>
+                                <state key="normal" title="普通棍王"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="modal" id="NIr-8Q-pqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-Ga-yfp">
+                                <rect key="frame" x="0.0" y="307" width="600" height="30"/>
+                                <state key="normal" title="分数"/>
+                                <connections>
+                                    <segue destination="Nw0-Wm-FdO" kind="modal" id="jpy-aR-tUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="normal" destination="BPB-qI-3Sy" id="Ueu-AF-sLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOX-ry-9Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.2666666666666666" y="836.85333333333335"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="VzX-t2-MRh">
+            <objects>
+                <viewController id="DKf-Eq-9Pk" customClass="LoginViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RqA-Nx-ucl"/>
+                        <viewControllerLayoutGuide type="bottom" id="dG4-Na-ZQR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oSD-Mi-gx1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-Xw-gzW">
+                                <rect key="frame" x="90" y="346" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="DKf-Eq-9Pk" eventType="touchUpInside" id="XAh-3G-7Hz"/>
+                                    <segue destination="eSw-wv-qCj" kind="modal" id="IR7-X3-M0x"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
+                                <rect key="frame" x="73" y="168" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-Jb-lyl">
+                                <rect key="frame" x="178" y="346" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="MRt-gw-Lct" kind="modal" id="672-cK-0LG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
+                                <rect key="frame" x="73" y="256" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="ypr-BG-CJT" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="aqo-1b-Lfb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ypr-BG-CJT" secondAttribute="trailing" constant="10" id="hD3-Ji-OED"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J05-a6-nUM" secondAttribute="trailing" constant="10" id="idM-qy-WBu"/>
+                            <constraint firstItem="J05-a6-nUM" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="pP1-1M-c0P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="ypr-BG-CJT" id="Eqe-8l-NiM"/>
+                        <outlet property="username" destination="J05-a6-nUM" id="RhW-Ne-Qgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wab-DF-Paf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="1603"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="oSV-Bn-V3O">
+            <objects>
+                <viewController id="MRt-gw-Lct" customClass="SignupViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Mk-Xc-aCV"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ih-Et-gLu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iXB-QR-Cqu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-O6-fve">
+                                <rect key="frame" x="86" y="171" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-pF-Ccv">
+                                <rect key="frame" x="86" y="235" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-eL-4RZ">
+                                <rect key="frame" x="86" y="114" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-zI-5sH">
+                                <rect key="frame" x="146" y="307" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="DKf-Eq-9Pk" kind="modal" id="haW-lP-MZC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fh4-uO-dPh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0et-Cw-l0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="1617.9999999999993"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IR7-X3-M0x"/>
+    </inferredMetricsTieBreakers>
 </document>
