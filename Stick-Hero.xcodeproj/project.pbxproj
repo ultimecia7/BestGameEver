@@ -10,6 +10,12 @@
 		0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */; };
 		0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */; };
 		0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */; };
+		353792031BEB99F50002AB96 /* JSONJoy-Swift-master in Resources */ = {isa = PBXBuildFile; fileRef = 353792011BEB99F50002AB96 /* JSONJoy-Swift-master */; };
+		353792041BEB99F50002AB96 /* SwiftHTTP-master in Resources */ = {isa = PBXBuildFile; fileRef = 353792021BEB99F50002AB96 /* SwiftHTTP-master */; };
+		353792111BEB9BC00002AB96 /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301731BEB8E5600AB1C2E /* JSONJoy.framework */; };
+		353792121BEB9BC00002AB96 /* JSONJoy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 355301731BEB8E5600AB1C2E /* JSONJoy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		353792151BEB9BC00002AB96 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301641BEB8E4100AB1C2E /* SwiftHTTP.framework */; };
+		353792161BEB9BC00002AB96 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 355301641BEB8E4100AB1C2E /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3553017A1BEB8E6300AB1C2E /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301771BEB8E5600AB1C2E /* JSONJoy.framework */; };
 		3553017B1BEB8E6300AB1C2E /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301681BEB8E4100AB1C2E /* SwiftHTTP.framework */; };
 		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; };
@@ -39,6 +45,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3537920D1BEB9B4F0002AB96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D958022D19E6ED8E003C8218;
+			remoteInfo = JSONJoyOSX;
+		};
+		3537920F1BEB9B4F0002AB96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D958025819E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		353792131BEB9BC00002AB96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B3E79B619D355CF006071F7;
+			remoteInfo = JSONJoy;
+		};
+		353792171BEB9BC00002AB96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFD901519C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
 		355301631BEB8E4100AB1C2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */;
@@ -97,10 +131,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		353792191BEB9BC00002AB96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				353792161BEB9BC00002AB96 /* SwiftHTTP.framework in Embed Frameworks */,
+				353792121BEB9BC00002AB96 /* JSONJoy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		353792011BEB99F50002AB96 /* JSONJoy-Swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "JSONJoy-Swift-master"; sourceTree = "<group>"; };
+		353792021BEB99F50002AB96 /* SwiftHTTP-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SwiftHTTP-master"; sourceTree = "<group>"; };
 		3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
 		3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "JSONJoy-Swift-master/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
 		35F586041BD6813900A94329 /* wdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy.png; sourceTree = "<group>"; };
@@ -136,7 +187,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353792151BEB9BC00002AB96 /* SwiftHTTP.framework in Frameworks */,
 				3553017A1BEB8E6300AB1C2E /* JSONJoy.framework in Frameworks */,
+				353792111BEB9BC00002AB96 /* JSONJoy.framework in Frameworks */,
 				3553017B1BEB8E6300AB1C2E /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +280,8 @@
 		73B7AD4E1B33BEC400115CAD = {
 			isa = PBXGroup;
 			children = (
+				353792011BEB99F50002AB96 /* JSONJoy-Swift-master */,
+				353792021BEB99F50002AB96 /* SwiftHTTP-master */,
 				3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */,
 				3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */,
 				73B7AD591B33BEC400115CAD /* Stick-Hero */,
@@ -281,10 +336,15 @@
 				73B7AD531B33BEC400115CAD /* Sources */,
 				73B7AD541B33BEC400115CAD /* Frameworks */,
 				73B7AD551B33BEC400115CAD /* Resources */,
+				353792191BEB9BC00002AB96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3537920E1BEB9B4F0002AB96 /* PBXTargetDependency */,
+				353792101BEB9B4F0002AB96 /* PBXTargetDependency */,
+				353792141BEB9BC00002AB96 /* PBXTargetDependency */,
+				353792181BEB9BC00002AB96 /* PBXTargetDependency */,
 			);
 			name = "Stick-Hero";
 			productName = "Stick-Hero";
@@ -401,9 +461,11 @@
 				731F6F521B3D0E3B00B8D89A /* StarExplosion.sks in Resources */,
 				35F586051BD6813900A94329 /* wdy.png in Resources */,
 				730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */,
+				353792031BEB99F50002AB96 /* JSONJoy-Swift-master in Resources */,
 				733263DB1B33C592003A3B2F /* kick.wav in Resources */,
 				733263E11B33C5E9003A3B2F /* human2.png in Resources */,
 				733263D91B33C592003A3B2F /* dead.wav in Resources */,
+				353792041BEB99F50002AB96 /* SwiftHTTP-master in Resources */,
 				731F6F501B3D095000B8D89A /* starParticle.png in Resources */,
 				733263D81B33C592003A3B2F /* bg_country.mp3 in Resources */,
 				73DBBA9C1B3913D00050C4EF /* stick_background.jpg in Resources */,
@@ -439,6 +501,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3537920E1BEB9B4F0002AB96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONJoyOSX;
+			targetProxy = 3537920D1BEB9B4F0002AB96 /* PBXContainerItemProxy */;
+		};
+		353792101BEB9B4F0002AB96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHTTPOSX;
+			targetProxy = 3537920F1BEB9B4F0002AB96 /* PBXContainerItemProxy */;
+		};
+		353792141BEB9BC00002AB96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONJoy;
+			targetProxy = 353792131BEB9BC00002AB96 /* PBXContainerItemProxy */;
+		};
+		353792181BEB9BC00002AB96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHTTP;
+			targetProxy = 353792171BEB9BC00002AB96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		73B7AD621B33BEC400115CAD /* Main.storyboard */ = {
@@ -548,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
@@ -561,6 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
