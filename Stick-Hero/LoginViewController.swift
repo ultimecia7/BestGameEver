@@ -18,15 +18,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login(sender: UIButton) {
-        let un = username.text!
-        let pw = password.text!
         
         struct Response: JSONJoy {
             let status: String?
-            let error: String?
+            let highscore: String?
             init(_ decoder: JSONDecoder) {
                 status = decoder["status"].string
-                error = decoder["error"].string
+                highscore = decoder["highscore"].string
             }
         }
         
@@ -34,7 +32,7 @@ class LoginViewController: UIViewController {
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.104/testreg.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.104/test.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
@@ -42,11 +40,15 @@ class LoginViewController: UIViewController {
                     return
                 }
                 let resp = Response(JSONDecoder(response.data))
-                if let err = resp.error {
-                    print("got an error: \(err)")
+                if (resp.status!=="true") {
+                    print("status: \(resp.status!)")
+                    print("highscore: \(resp.highscore!)")
+                    self.performSegueWithIdentifier("login", sender: self)
                 }
-                if let status = resp.status {
-                    print("completed: \(status)")
+                else{
+                    print("status: \(resp.status!)")
+                    print("highscore: \(resp.highscore!)")
+                    print("wrong")
                 }
             }
         }
@@ -56,7 +58,7 @@ class LoginViewController: UIViewController {
 
         
         
-        self.performSegueWithIdentifier("login", sender: self)
+        
         
     }
 }
