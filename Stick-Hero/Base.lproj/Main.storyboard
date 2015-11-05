@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DKf-Eq-9Pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DKf-Eq-9Pk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -66,30 +66,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-MF-qtm">
-                                <rect key="frame" x="0.0" y="232" width="600" height="30"/>
-                                <animations/>
-                                <state key="normal" title="限时棍王"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-qI-3Sy">
-                                <rect key="frame" x="270" y="143" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-qI-3Sy">
+                                <rect key="frame" x="135" y="146" width="60" height="30"/>
                                 <animations/>
                                 <state key="normal" title="普通棍王"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="modal" id="NIr-8Q-pqe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-Ga-yfp">
-                                <rect key="frame" x="0.0" y="307" width="600" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-Ga-yfp">
+                                <rect key="frame" x="135" y="304" width="60" height="30"/>
                                 <animations/>
                                 <state key="normal" title="分数"/>
                                 <connections>
                                     <segue destination="Nw0-Wm-FdO" kind="modal" id="jpy-aR-tUz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-MF-qtm">
+                                <rect key="frame" x="135" y="228" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="限时棍王"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PuV-Ga-yfp" firstAttribute="leading" secondItem="HNv-kl-vKi" secondAttribute="leadingMargin" constant="105" id="IAC-UB-kFS"/>
+                            <constraint firstItem="Ed2-MF-qtm" firstAttribute="leading" secondItem="HNv-kl-vKi" secondAttribute="leadingMargin" constant="105" id="ZRZ-9q-aqg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BPB-qI-3Sy" secondAttribute="trailing" constant="105" id="c4v-Xs-ZAL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ed2-MF-qtm" secondAttribute="trailing" constant="105" id="dVx-tS-uMx"/>
+                            <constraint firstItem="BPB-qI-3Sy" firstAttribute="leading" secondItem="HNv-kl-vKi" secondAttribute="leadingMargin" constant="105" id="fuf-oC-LTU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PuV-Ga-yfp" secondAttribute="trailing" constant="105" id="iD3-vq-SHs"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="normal" destination="BPB-qI-3Sy" id="Ueu-AF-sLu"/>
@@ -111,8 +119,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-Xw-gzW">
-                                <rect key="frame" x="90" y="346" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-Xw-gzW">
+                                <rect key="frame" x="141" y="309" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -126,20 +134,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-Jb-lyl">
-                                <rect key="frame" x="178" y="346" width="55" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
+                                <rect key="frame" x="73" y="256" width="174" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-Jb-lyl">
+                                <rect key="frame" x="133" y="358" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="MRt-gw-Lct" kind="modal" id="672-cK-0LG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
-                                <rect key="frame" x="73" y="256" width="174" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +155,11 @@
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
+                            <constraint firstItem="TTV-Xw-gzW" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="121" id="9MW-pz-woj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDB-Jb-lyl" secondAttribute="trailing" constant="112" id="RqH-2O-Bmn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TTV-Xw-gzW" secondAttribute="trailing" constant="121" id="Yrm-wf-JVN"/>
                             <constraint firstItem="ypr-BG-CJT" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="aqo-1b-Lfb"/>
+                            <constraint firstItem="bDB-Jb-lyl" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="113" id="gUb-j5-yFm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ypr-BG-CJT" secondAttribute="trailing" constant="10" id="hD3-Ji-OED"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J05-a6-nUM" secondAttribute="trailing" constant="10" id="idM-qy-WBu"/>
                             <constraint firstItem="J05-a6-nUM" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="pP1-1M-c0P"/>
@@ -174,19 +186,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-O6-fve">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-O6-fve">
                                 <rect key="frame" x="86" y="171" width="174" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-pF-Ccv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-pF-Ccv">
                                 <rect key="frame" x="86" y="235" width="174" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-eL-4RZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-eL-4RZ">
                                 <rect key="frame" x="86" y="114" width="174" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -197,6 +209,7 @@
                                 <animations/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="Signup" destination="MRt-gw-Lct" eventType="touchUpInside" id="L1f-Hz-qm4"/>
                                     <segue destination="DKf-Eq-9Pk" kind="modal" id="haW-lP-MZC"/>
                                 </connections>
                             </button>
@@ -205,6 +218,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fh4-uO-dPh"/>
+                    <connections>
+                        <outlet property="password" destination="2Qi-O6-fve" id="kBz-fX-pDr"/>
+                        <outlet property="username" destination="bSk-eL-4RZ" id="EvC-H1-0vD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0et-Cw-l0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
