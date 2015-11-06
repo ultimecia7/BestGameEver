@@ -43,7 +43,9 @@ class LoginViewController: UIViewController {
                 if (resp.status!=="true") {
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
-                    self.performSegueWithIdentifier("login", sender: self)
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.performSegueWithIdentifier("login", sender: self)
+                    }
                 }
                 else{
                     print("status: \(resp.status!)")

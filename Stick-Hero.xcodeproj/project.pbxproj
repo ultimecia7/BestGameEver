@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D100B2F1BED093D006A745C /* wdy_thin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2B1BED093D006A745C /* wdy_thin1.png */; };
+		0D100B301BED093D006A745C /* wdy_thin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2C1BED093D006A745C /* wdy_thin2.png */; };
+		0D100B311BED093D006A745C /* wdy_shoulder1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2D1BED093D006A745C /* wdy_shoulder1.png */; };
+		0D100B321BED093D006A745C /* wdy_shoulder2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2E1BED093D006A745C /* wdy_shoulder2.png */; };
 		0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */; };
 		0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */; };
 		0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */; };
@@ -147,6 +151,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D100B2B1BED093D006A745C /* wdy_thin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_thin1.png; sourceTree = "<group>"; };
+		0D100B2C1BED093D006A745C /* wdy_thin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_thin2.png; sourceTree = "<group>"; };
+		0D100B2D1BED093D006A745C /* wdy_shoulder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_shoulder1.png; sourceTree = "<group>"; };
+		0D100B2E1BED093D006A745C /* wdy_shoulder2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_shoulder2.png; sourceTree = "<group>"; };
 		0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +238,10 @@
 		733263CE1B33C511003A3B2F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0D100B2B1BED093D006A745C /* wdy_thin1.png */,
+				0D100B2C1BED093D006A745C /* wdy_thin2.png */,
+				0D100B2D1BED093D006A745C /* wdy_shoulder1.png */,
+				0D100B2E1BED093D006A745C /* wdy_shoulder2.png */,
 				731F6F4B1B3D041600B8D89A /* button_retry_down.png */,
 				35F586041BD6813900A94329 /* wdy.png */,
 				731F6F481B3D001100B8D89A /* button_retry_up.png */,
@@ -461,6 +473,7 @@
 				731F6F521B3D0E3B00B8D89A /* StarExplosion.sks in Resources */,
 				35F586051BD6813900A94329 /* wdy.png in Resources */,
 				730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */,
+				0D100B2F1BED093D006A745C /* wdy_thin1.png in Resources */,
 				353792031BEB99F50002AB96 /* JSONJoy-Swift-master in Resources */,
 				733263DB1B33C592003A3B2F /* kick.wav in Resources */,
 				733263E11B33C5E9003A3B2F /* human2.png in Resources */,
@@ -471,7 +484,9 @@
 				73DBBA9C1B3913D00050C4EF /* stick_background.jpg in Resources */,
 				73B7AD691B33BEC400115CAD /* LaunchScreen.storyboard in Resources */,
 				733263DC1B33C592003A3B2F /* stick_grow_loop.wav in Resources */,
+				0D100B311BED093D006A745C /* wdy_shoulder1.png in Resources */,
 				733263E01B33C5E9003A3B2F /* human1.png in Resources */,
+				0D100B321BED093D006A745C /* wdy_shoulder2.png in Resources */,
 				733263DA1B33C592003A3B2F /* fall.wav in Resources */,
 				73B7AD661B33BEC400115CAD /* Assets.xcassets in Resources */,
 				73B7AD641B33BEC400115CAD /* Main.storyboard in Resources */,
@@ -479,6 +494,7 @@
 				731F6F581B3D17D000B8D89A /* highScore.wav in Resources */,
 				731F6F4C1B3D041600B8D89A /* button_retry_down.png in Resources */,
 				731F6F4A1B3D001100B8D89A /* button_retry_up.png in Resources */,
+				0D100B301BED093D006A745C /* wdy_thin2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
