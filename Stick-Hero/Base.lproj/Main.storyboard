@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="590" y="800"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="43s-I2-HLb">
             <objects>
-                <viewController id="Nw0-Wm-FdO" sceneMemberID="viewController">
+                <viewController id="Nw0-Wm-FdO" customClass="ScoreViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bw7-8m-V8y"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ph-zU-vZr"/>
@@ -46,6 +46,15 @@
                     <view key="view" contentMode="scaleToFill" id="8Qu-dZ-GSq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JB-pz-crB">
+                                <rect key="frame" x="207" y="400" width="30" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="eSw-wv-qCj" kind="modal" id="uOW-3w-r0I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -229,6 +238,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IR7-X3-M0x"/>
+        <segue reference="uOW-3w-r0I"/>
     </inferredMetricsTieBreakers>
 </document>
