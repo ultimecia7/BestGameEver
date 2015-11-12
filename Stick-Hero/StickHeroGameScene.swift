@@ -29,6 +29,8 @@ class StickHeroGameScene: SKScene, SKPhysicsContactDelegate {
     let StackGapMinWidth:Int = 80
     let HeroSpeed:CGFloat = 760
     
+    var Character = ""
+    
     let StoreScoreName = "com.stickHero.score"
  
     var isBegin = false
@@ -61,9 +63,27 @@ class StickHeroGameScene: SKScene, SKPhysicsContactDelegate {
     
     lazy var walkAction:SKAction = {
         var textures:[SKTexture] = []
-        for i in 0...1 {
-            let texture = SKTexture(imageNamed: "human\(i + 1).png")
-            textures.append(texture)
+        switch self.Character{
+            case "DY#1":
+                for i in 0...1 {
+                    let texture = SKTexture(imageNamed: "human\(i + 1).png")
+                    textures.append(texture)
+                }
+            case "DY#2":
+                for i in 0...1 {
+                    let texture = SKTexture(imageNamed: "wdy_shoulder\(i + 1).png")
+                    textures.append(texture)
+                }
+            case "DY#3":
+                for i in 0...1 {
+                    let texture = SKTexture(imageNamed: "wdy_thin\(i + 1).png")
+                    textures.append(texture)
+                }
+            default:
+                for i in 0...1 {
+                    let texture = SKTexture(imageNamed: "human\(i + 1).png")
+                    textures.append(texture)
+                }
         }
         
         let action = SKAction.animateWithTextures(textures, timePerFrame: 0.15, resize: true, restore: true)
@@ -352,7 +372,17 @@ private extension StickHeroGameScene {
     }
     
     func loadHero() {
-        let hero = SKSpriteNode(imageNamed: "human1")
+        var hero = SKSpriteNode(imageNamed: "human1")
+        switch Character{
+            case "DY#1":
+                hero = SKSpriteNode(imageNamed: "human1")
+            case "DY#2":
+                hero = SKSpriteNode(imageNamed: "wdy_shoulder1")
+            case "DY#3":
+                hero = SKSpriteNode(imageNamed: "wdy_thin1")
+            default:
+                break
+        }
         hero.name = StickHeroGameSceneChildName.HeroName.rawValue
         hero.position = CGPointMake(-DefinedScreenWidth / 2 + nextLeftStartX - hero.size.width / 2 - 20, -DefinedScreenHeight / 2 + StackHeight + hero.size.height / 2 - 4)
         hero.zPosition = StickHeroGameSceneZposition.HeroZposition.rawValue

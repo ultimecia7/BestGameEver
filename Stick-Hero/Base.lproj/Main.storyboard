@@ -97,6 +97,30 @@
                                 <animations/>
                                 <state key="normal" title="限时棍王"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDz-Nm-UMN" userLabel="DY#1">
+                                <rect key="frame" x="0.0" y="54" width="77" height="150"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="human1.png"/>
+                                <connections>
+                                    <action selector="SelectDY1:" destination="eSw-wv-qCj" eventType="touchDown" id="BFM-Sm-LDw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-WN-GAd" userLabel="DY#1">
+                                <rect key="frame" x="0.0" y="212" width="77" height="150"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="wdy_shoulder1.png"/>
+                                <connections>
+                                    <action selector="SelectDY2:" destination="eSw-wv-qCj" eventType="touchDown" id="4JG-yq-DeT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3F-2q-WgO" userLabel="DY#1">
+                                <rect key="frame" x="0.0" y="365" width="77" height="150"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="wdy_thin1.png"/>
+                                <connections>
+                                    <action selector="SelectDY3:" destination="eSw-wv-qCj" eventType="touchDown" id="3v9-51-BxE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,12 +134,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="DYNum1" destination="JDz-Nm-UMN" id="B83-aQ-ptM"/>
+                        <outlet property="DYNum2" destination="a0F-WN-GAd" id="xfi-VM-bUq"/>
+                        <outlet property="DYNum3" destination="B3F-2q-WgO" id="w6E-GQ-S9A"/>
                         <outlet property="normal" destination="BPB-qI-3Sy" id="Ueu-AF-sLu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOX-ry-9Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4.2666666666666666" y="836.85333333333335"/>
+            <point key="canvasLocation" x="-5" y="836"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VzX-t2-MRh">
@@ -238,7 +265,12 @@
             <point key="canvasLocation" x="530" y="1617.9999999999993"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="human1.png" width="77" height="150"/>
+        <image name="wdy_shoulder1.png" width="77" height="150"/>
+        <image name="wdy_thin1.png" width="77" height="150"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IR7-X3-M0x"/>
+        <segue reference="5YG-iR-RYJ"/>
     </inferredMetricsTieBreakers>
 </document>

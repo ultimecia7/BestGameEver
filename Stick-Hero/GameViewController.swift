@@ -12,11 +12,15 @@ import AVFoundation
 
 class GameViewController: UIViewController {
     var musicPlayer:AVAudioPlayer!
+    var character:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print(character)
+        
         let scene = StickHeroGameScene(size:CGSizeMake(DefinedScreenWidth, DefinedScreenHeight))
+        scene.Character = character
         
         // Configure the view.
         let skView = self.view as! SKView
