@@ -172,14 +172,14 @@
                                     <action selector="login:" destination="DKf-Eq-9Pk" eventType="touchUpInside" id="XAh-3G-7Hz"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
-                                <rect key="frame" x="38" y="115" width="256" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
+                                <rect key="frame" x="16" y="115" width="295" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
-                                <rect key="frame" x="38" y="194" width="256" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
+                                <rect key="frame" x="16" y="194" width="295" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -194,19 +194,13 @@
                                     <segue destination="MRt-gw-Lct" kind="modal" id="672-cK-0LG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-dp-xaq">
-                                <rect key="frame" x="38" y="86" width="256" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-EK-xzf">
+                                <rect key="frame" x="16" y="165" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-EK-xzf">
-                                <rect key="frame" x="38" y="165" width="256" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRq-6A-KpN">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRq-6A-KpN">
                                 <rect key="frame" x="16" y="405" width="288" height="30"/>
                                 <state key="normal" title="No account? Try me">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,6 +209,12 @@
                                     <segue destination="eSw-wv-qCj" kind="modal" id="MMQ-GA-vo4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Account:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-dp-xaq">
+                                <rect key="frame" x="16" y="86" width="271" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,9 +223,19 @@
                         </accessibility>
                         <constraints>
                             <constraint firstItem="TTV-Xw-gzW" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="121" id="9MW-pz-woj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Y2t-dp-xaq" secondAttribute="leading" id="BCg-XU-Tz1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y2t-dp-xaq" secondAttribute="trailing" constant="9" id="FZZ-ZE-jwN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aV7-EK-xzf" secondAttribute="trailing" id="M0r-BB-50x"/>
+                            <constraint firstItem="J05-a6-nUM" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="-4" id="R3T-vV-LqF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bDB-Jb-lyl" secondAttribute="trailing" constant="112" id="RqH-2O-Bmn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J05-a6-nUM" secondAttribute="trailing" constant="-11" id="W4F-83-aPY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRq-6A-KpN" secondAttribute="trailing" constant="-4" id="Yes-IH-ZjX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TTV-Xw-gzW" secondAttribute="trailing" constant="121" id="Yrm-wf-JVN"/>
+                            <constraint firstItem="QRq-6A-KpN" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="-4" id="dKl-5W-2Zi"/>
                             <constraint firstItem="bDB-Jb-lyl" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="112" id="gUb-j5-yFm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ypr-BG-CJT" secondAttribute="trailing" constant="-11" id="nnS-3L-YbP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aV7-EK-xzf" secondAttribute="leading" id="paY-zj-psm"/>
+                            <constraint firstItem="ypr-BG-CJT" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="-4" id="wj1-zh-Hy0"/>
                         </constraints>
                     </view>
                     <connections>
