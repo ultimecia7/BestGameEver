@@ -76,7 +76,7 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     }
     
     var timer: NSTimer?
-    var remainingSeconds: Int = 60{
+    var remainingSeconds: Int = 30{
         willSet(newSeconds){
             let timingBand = childNodeWithName(SpeedModeSceneChildName.TimerName.rawValue) as? SKLabelNode
             timingBand!.text = "\(newSeconds)"
@@ -235,7 +235,7 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
         isFirstTouch = false
         touchCounter = 0
         score = 0
-        remainingSeconds = 60
+        remainingSeconds = 30
         nextLeftStartX = 0
         HeroSpeed = 650
         removeAllChildren()
@@ -418,7 +418,7 @@ private extension SpeedModeScene {
     func loadTimer(){
         let timingBand = SKLabelNode(fontNamed: "Arial")
         timingBand.name = SpeedModeSceneChildName.TimerName.rawValue
-        timingBand.text = "60"
+        timingBand.text = "30"
         timingBand.position = CGPointMake(0, DefinedScreenHeight / 2 - 1400)
         timingBand.fontColor = SKColor.blueColor()
         timingBand.fontSize = 120

@@ -14,6 +14,7 @@ import JSONJoy
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var billboard: UILabel!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
+                    self.billboard.text = "please check your network"
                     print("got an error: \(error)")
                     return
                 }
@@ -51,12 +53,15 @@ class LoginViewController: UIViewController {
                     }
                 }
                 else{
+                    self.billboard.text = "invalid password or username"
                     print("status: \(resp.status!)")
                     print("wrong")
+
                 }
             }
         }
         catch let error {
+            self.billboard.text = "please try again."
             print("got an error creating the request: \(error)")
         }
 

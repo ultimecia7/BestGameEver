@@ -112,7 +112,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.74022841147956764" green="0.42019426524362791" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="棍王普通的跑"/>
+                                <state key="normal" title="棍王普通地跑"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="modal" identifier="normalwdy" id="MSm-K8-AIL"/>
                                 </connections>
@@ -132,7 +132,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.74022841149999996" green="0.42019426519999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="棍王限时的跑"/>
+                                <state key="normal" title="棍王限时地跑"/>
                                 <connections>
                                     <segue destination="3tw-RJ-eCa" kind="modal" id="Gl8-rP-bJG"/>
                                 </connections>
@@ -220,7 +220,7 @@
                                 <rect key="frame" x="7" y="194" width="304" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Account:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-dp-xaq">
                                 <rect key="frame" x="16" y="86" width="271" height="21"/>
@@ -253,6 +253,12 @@
                                     <segue destination="MRt-gw-Lct" kind="modal" id="672-cK-0LG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-6T-5Ff">
+                                <rect key="frame" x="20" y="57" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -271,12 +277,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="TTV-Xw-gzW" secondAttribute="trailing" constant="121" id="Yrm-wf-JVN"/>
                             <constraint firstItem="QRq-6A-KpN" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="-4" id="dKl-5W-2Zi"/>
                             <constraint firstItem="bDB-Jb-lyl" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="121" id="gUb-j5-yFm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DLz-6T-5Ff" secondAttribute="leading" id="l1s-ek-Mdf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ypr-BG-CJT" secondAttribute="trailing" constant="-11" id="nnS-3L-YbP"/>
+                            <constraint firstItem="Y2t-dp-xaq" firstAttribute="top" secondItem="DLz-6T-5Ff" secondAttribute="bottom" constant="8" id="o6b-fz-qQC"/>
                             <constraint firstAttribute="leadingMargin" secondItem="aV7-EK-xzf" secondAttribute="leading" id="paY-zj-psm"/>
                             <constraint firstItem="ypr-BG-CJT" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="-4" id="wj1-zh-Hy0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="billboard" destination="DLz-6T-5Ff" id="Wnh-sO-XTs"/>
                         <outlet property="password" destination="ypr-BG-CJT" id="Eqe-8l-NiM"/>
                         <outlet property="username" destination="J05-a6-nUM" id="RhW-Ne-Qgs"/>
                         <segue destination="eSw-wv-qCj" kind="modal" identifier="login" id="MZR-1e-aW1"/>
@@ -385,7 +394,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MZR-1e-aW1"/>
         <segue reference="Bzs-in-MzM"/>
-        <segue reference="2Kq-g1-Nbx"/>
     </inferredMetricsTieBreakers>
 </document>
