@@ -134,7 +134,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="DKf-Eq-9Pk" eventType="touchUpInside" id="XAh-3G-7Hz"/>
-                                    <segue destination="eSw-wv-qCj" kind="modal" identifier="login" id="IR7-X3-M0x"/>
+                                    <segue destination="eSw-wv-qCj" kind="modal" identifier="loginbutton" id="IR7-X3-M0x"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
@@ -238,6 +238,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uOW-3w-r0I"/>
+        <segue reference="IR7-X3-M0x"/>
     </inferredMetricsTieBreakers>
 </document>

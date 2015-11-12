@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.104/test.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.102/test.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
@@ -40,16 +40,17 @@ class LoginViewController: UIViewController {
                     return
                 }
                 let resp = Response(JSONDecoder(response.data))
+                
+                
                 if (resp.status!=="true") {
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
                     dispatch_async(dispatch_get_main_queue()) {
-                        self.performSegueWithIdentifier("login", sender: self)
+                        self.performSegueWithIdentifier("loginbutton", sender: self)
                     }
                 }
                 else{
                     print("status: \(resp.status!)")
-                    print("highscore: \(resp.highscore!)")
                     print("wrong")
                 }
             }
