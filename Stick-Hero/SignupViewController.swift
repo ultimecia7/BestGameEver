@@ -33,6 +33,29 @@ class SignupViewController: UIViewController {
         print("\(accountTextField.text!)")
         print("\(passwordTextField.text!)")
         
+        let userAccount = accountTextField.text;
+        let userPassword = passwordTextField.text;
+        let userRepeatPassword = repeatpasswordTextField.text;
+        
+        if(userAccount!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
+        {
+            
+            // Display alert message
+            
+            displayMyAlertMessage("All fields are required");
+            
+            return;
+        }
+        
+        //Check if passwords match
+        if(userPassword != userRepeatPassword)
+        {
+            // Display an alert message
+            displayMyAlertMessage("Passwords do not match");
+            return;
+            
+        }
+        
         
         let params = ["username":"\(accountTextField.text!)", "password":"\(passwordTextField.text!)"]
         
@@ -59,4 +82,21 @@ class SignupViewController: UIViewController {
         }
 
     }
+    
+    
+    
+    func displayMyAlertMessage(userMessage:String)
+    {
+        
+        var myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+        
+        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default, handler:nil);
+        
+        myAlert.addAction(okAction);
+        
+        self.presentViewController(myAlert, animated:true, completion:nil);
+        
+    }
+    
+    
 }
