@@ -24,6 +24,8 @@
 		3553017A1BEB8E6300AB1C2E /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301771BEB8E5600AB1C2E /* JSONJoy.framework */; };
 		3553017B1BEB8E6300AB1C2E /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301681BEB8E4100AB1C2E /* SwiftHTTP.framework */; };
 		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; };
+		5B0E179C1BF4BCF300EAD378 /* SpeedModeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E179B1BF4BCF300EAD378 /* SpeedModeScene.swift */; };
+		5B0E17A21BF4BD0B00EAD378 /* SpeedModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */; };
 		730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */; };
 		730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730ED6DF1B3BA6FD0041F888 /* Defined.swift */; };
 		731F6F4A1B3D001100B8D89A /* button_retry_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 731F6F481B3D001100B8D89A /* button_retry_up.png */; };
@@ -165,6 +167,8 @@
 		3553015C1BEB8E4100AB1C2E /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
 		3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "JSONJoy-Swift-master/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
 		35F586041BD6813900A94329 /* wdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy.png; sourceTree = "<group>"; };
+		5B0E179B1BF4BCF300EAD378 /* SpeedModeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedModeScene.swift; sourceTree = "<group>"; };
+		5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedModeViewController.swift; sourceTree = "<group>"; };
 		730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch_mid.wav; sourceTree = "<group>"; };
 		730ED6DF1B3BA6FD0041F888 /* Defined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
 		731F6F481B3D001100B8D89A /* button_retry_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_retry_up.png; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 				733263E61B33C68D003A3B2F /* StickHeroGameScene.swift */,
 				73DBBA9D1B39377D0050C4EF /* Tools.swift */,
 				730ED6DF1B3BA6FD0041F888 /* Defined.swift */,
+				5B0E179B1BF4BCF300EAD378 /* SpeedModeScene.swift */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				0D7BCB231BEB67F300D2C7AD /* HomeViewController.swift */,
 				0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */,
 				0DCD69D51BF4750D0053620D /* ScoreViewController.swift */,
+				5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */,
 				73B7AD651B33BEC400115CAD /* Assets.xcassets */,
 				73B7AD671B33BEC400115CAD /* LaunchScreen.storyboard */,
 				73B7AD6A1B33BEC400115CAD /* Info.plist */,
@@ -511,7 +517,9 @@
 				0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */,
 				73B7AD611B33BEC400115CAD /* GameViewController.swift in Sources */,
 				0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */,
+				5B0E179C1BF4BCF300EAD378 /* SpeedModeScene.swift in Sources */,
 				733263E71B33C68D003A3B2F /* StickHeroGameScene.swift in Sources */,
+				5B0E17A21BF4BD0B00EAD378 /* SpeedModeViewController.swift in Sources */,
 				73B7AD5B1B33BEC400115CAD /* AppDelegate.swift in Sources */,
 				730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */,
 				0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */,
