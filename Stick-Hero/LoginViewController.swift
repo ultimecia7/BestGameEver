@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    @IBAction func login(sender: UIButton) {
+    @IBAction func login(sender: AnyObject) {
         
         struct Response: JSONJoy {
             let status: String?
@@ -42,11 +42,12 @@ class LoginViewController: UIViewController {
                 let resp = Response(JSONDecoder(response.data))
                 
                 
-                if (resp.status!=="true") {
+                if (resp.status=="true") {
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
+                    
                     dispatch_async(dispatch_get_main_queue()) {
-                        self.performSegueWithIdentifier("loginbutton", sender: self)
+                    self.performSegueWithIdentifier("login", sender: self)
                     }
                 }
                 else{

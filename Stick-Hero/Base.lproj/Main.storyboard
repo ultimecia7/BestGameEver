@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DKf-Eq-9Pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DKf-Eq-9Pk">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -77,48 +77,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-qI-3Sy">
-                                <rect key="frame" x="135" y="146" width="60" height="30"/>
+                                <rect key="frame" x="105" y="147" width="140" height="30"/>
                                 <animations/>
-                                <state key="normal" title="普通棍王"/>
+                                <color key="backgroundColor" red="0.74022841147956764" green="0.42019426524362791" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="棍王普通的跑"/>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="modal" id="NIr-8Q-pqe"/>
+                                    <segue destination="BV1-FR-VrT" kind="modal" identifier="normalwdy" id="MSm-K8-AIL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-Ga-yfp">
-                                <rect key="frame" x="135" y="304" width="60" height="30"/>
+                                <rect key="frame" x="105" y="304" width="140" height="30"/>
                                 <animations/>
-                                <state key="normal" title="分数"/>
+                                <color key="backgroundColor" red="0.74022841149999996" green="0.42019426519999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="你的棍王跑了多远"/>
                                 <connections>
-                                    <segue destination="Nw0-Wm-FdO" kind="modal" id="jpy-aR-tUz"/>
+                                    <segue destination="Nw0-Wm-FdO" kind="modal" id="hj6-dJ-m7U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-MF-qtm">
-                                <rect key="frame" x="135" y="228" width="60" height="30"/>
+                                <rect key="frame" x="105" y="224" width="140" height="30"/>
                                 <animations/>
-                                <state key="normal" title="限时棍王"/>
+                                <color key="backgroundColor" red="0.74022841149999996" green="0.42019426519999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="棍王限时的跑"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDz-Nm-UMN" userLabel="DY#1">
-                                <rect key="frame" x="0.0" y="54" width="77" height="150"/>
+                                <rect key="frame" x="223" y="365" width="77" height="150"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="human1.png"/>
                                 <connections>
                                     <action selector="SelectDY1:" destination="eSw-wv-qCj" eventType="touchDown" id="BFM-Sm-LDw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-WN-GAd" userLabel="DY#1">
-                                <rect key="frame" x="0.0" y="212" width="77" height="150"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="wdy_shoulder1.png"/>
-                                <connections>
-                                    <action selector="SelectDY2:" destination="eSw-wv-qCj" eventType="touchDown" id="4JG-yq-DeT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3F-2q-WgO" userLabel="DY#1">
-                                <rect key="frame" x="0.0" y="365" width="77" height="150"/>
+                                <rect key="frame" x="122" y="365" width="77" height="150"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="wdy_thin1.png"/>
                                 <connections>
                                     <action selector="SelectDY3:" destination="eSw-wv-qCj" eventType="touchDown" id="3v9-51-BxE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-WN-GAd" userLabel="DY#1">
+                                <rect key="frame" x="25" y="365" width="77" height="150"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="wdy_shoulder1.png"/>
+                                <connections>
+                                    <action selector="SelectDY2:" destination="eSw-wv-qCj" eventType="touchDown" id="4JG-yq-DeT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,32 +163,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-Xw-gzW">
-                                <rect key="frame" x="141" y="309" width="38" height="30"/>
+                                <rect key="frame" x="116" y="286" width="88" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.24368139380000001" green="0.56140770529999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="DKf-Eq-9Pk" eventType="touchUpInside" id="XAh-3G-7Hz"/>
-                                    <segue destination="eSw-wv-qCj" kind="modal" identifier="loginbutton" id="IR7-X3-M0x"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
-                                <rect key="frame" x="73" y="168" width="174" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="J05-a6-nUM">
+                                <rect key="frame" x="38" y="115" width="256" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
-                                <rect key="frame" x="73" y="256" width="174" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-BG-CJT">
+                                <rect key="frame" x="38" y="194" width="256" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-Jb-lyl">
-                                <rect key="frame" x="133" y="358" width="55" height="30"/>
+                                <rect key="frame" x="116" y="334" width="88" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.62669129393808698" blue="0.13582677460346382" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="MRt-gw-Lct" kind="modal" id="672-cK-0LG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-dp-xaq">
+                                <rect key="frame" x="38" y="86" width="256" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-EK-xzf">
+                                <rect key="frame" x="38" y="165" width="256" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRq-6A-KpN">
+                                <rect key="frame" x="16" y="405" width="288" height="30"/>
+                                <state key="normal" title="No account? Try me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eSw-wv-qCj" kind="modal" id="MMQ-GA-vo4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,16 +225,13 @@
                             <constraint firstItem="TTV-Xw-gzW" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="121" id="9MW-pz-woj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bDB-Jb-lyl" secondAttribute="trailing" constant="112" id="RqH-2O-Bmn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TTV-Xw-gzW" secondAttribute="trailing" constant="121" id="Yrm-wf-JVN"/>
-                            <constraint firstItem="ypr-BG-CJT" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="aqo-1b-Lfb"/>
                             <constraint firstItem="bDB-Jb-lyl" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="112" id="gUb-j5-yFm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ypr-BG-CJT" secondAttribute="trailing" constant="10" id="hD3-Ji-OED"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="J05-a6-nUM" secondAttribute="trailing" constant="10" id="idM-qy-WBu"/>
-                            <constraint firstItem="J05-a6-nUM" firstAttribute="leading" secondItem="oSD-Mi-gx1" secondAttribute="leadingMargin" constant="10" id="pP1-1M-c0P"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="password" destination="ypr-BG-CJT" id="Eqe-8l-NiM"/>
                         <outlet property="username" destination="J05-a6-nUM" id="RhW-Ne-Qgs"/>
+                        <segue destination="eSw-wv-qCj" kind="modal" identifier="login" id="MZR-1e-aW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wab-DF-Paf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -223,41 +250,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-O6-fve">
-                                <rect key="frame" x="86" y="171" width="174" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-pF-Ccv">
-                                <rect key="frame" x="86" y="235" width="174" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSk-eL-4RZ">
-                                <rect key="frame" x="86" y="114" width="174" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-zI-5sH">
-                                <rect key="frame" x="146" y="307" width="55" height="30"/>
+                                <rect key="frame" x="116" y="304" width="88" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.24368139380000001" green="0.56140770529999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="Signup" destination="MRt-gw-Lct" eventType="touchUpInside" id="L1f-Hz-qm4"/>
-                                    <segue destination="DKf-Eq-9Pk" kind="modal" id="haW-lP-MZC"/>
+                                    <segue destination="DKf-Eq-9Pk" kind="modal" identifier="signup" id="1I9-9K-7f9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k98-kl-lrC">
+                                <rect key="frame" x="12" y="68" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="y7s-nj-8eh">
+                                <rect key="frame" x="12" y="160" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz4-dF-JTg">
+                                <rect key="frame" x="12" y="201" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat password:" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-K7-uYA">
+                                <rect key="frame" x="12" y="230" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account:" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-3t-vyd">
+                                <rect key="frame" x="12" y="97" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-ci-4Ti">
+                                <rect key="frame" x="16" y="367" width="288" height="30"/>
+                                <state key="normal" title="I have an account. Let me login.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DKf-Eq-9Pk" kind="modal" identifier="haveaccount" id="Bzs-in-MzM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZL-fh-uRa">
+                                <rect key="frame" x="12" y="135" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fh4-uO-dPh"/>
                     <connections>
-                        <outlet property="password" destination="2Qi-O6-fve" id="kBz-fX-pDr"/>
-                        <outlet property="username" destination="bSk-eL-4RZ" id="EvC-H1-0vD"/>
+                        <outlet property="accountTextField" destination="h5X-3t-vyd" id="BWR-ki-cOv"/>
+                        <outlet property="passwordTextField" destination="y7s-nj-8eh" id="QFf-qf-wTr"/>
+                        <outlet property="repeatpasswordTextField" destination="ArD-K7-uYA" id="Mzf-7t-ByU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0et-Cw-l0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,6 +325,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5YG-iR-RYJ"/>
+        <segue reference="MZR-1e-aW1"/>
+        <segue reference="Bzs-in-MzM"/>
     </inferredMetricsTieBreakers>
 </document>

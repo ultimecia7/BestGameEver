@@ -14,9 +14,9 @@ import JSONJoy
 
 class SignupViewController: UIViewController {
 
-    @IBOutlet weak var username: UITextField!
-   
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var accountTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var repeatpasswordTextField: UITextField!
 
     @IBAction func Signup() {
         //Send json (test)
@@ -30,12 +30,15 @@ class SignupViewController: UIViewController {
             }
         }
         
+        print("\(accountTextField.text!)")
+        print("\(passwordTextField.text!)")
         
-        let params = ["username":"\(username.text!)", "password":"\(password.text!)"]
+        
+        let params = ["username":"\(accountTextField.text!)", "password":"\(passwordTextField.text!)"]
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.104/testreg.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.102/testreg.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {

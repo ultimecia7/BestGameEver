@@ -22,9 +22,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var DYNum3: UIButton!
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
+        if(segue.identifier=="normalwdy"){
         // Create a new variable to store the instance of PlayerTableViewController
         let destinationVC = segue.destinationViewController as!GameViewController
         destinationVC.character = character
+        }
     }
     
 
