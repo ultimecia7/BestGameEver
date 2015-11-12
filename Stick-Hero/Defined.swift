@@ -65,6 +65,7 @@ enum SpeedModeSceneChildName : String {
     case GameOverLayerName = "over"
     case RetryButtonName = "retry"
     case HighScoreName = "highscore"
+    case TimerName="timer"
 }
 
 enum SpeedModeSceneActionKey: String {
@@ -90,6 +91,7 @@ enum SpeedModeSceneZposition: CGFloat {
     case StackMidZposition = 35
     case StickZposition = 40
     case ScoreBackgroundZposition = 50
+    case TimerZposition = 60
     case HeroZposition, ScoreZposition, TipZposition, PerfectZposition = 100
     case EmitterZposition
     case GameOverZposition

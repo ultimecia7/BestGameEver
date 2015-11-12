@@ -6,23 +6,36 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Speed Mode View Controller-->
         <scene sceneID="vrG-CB-tfx">
             <objects>
-                <viewController id="3tw-RJ-eCa" sceneMemberID="viewController">
+                <viewController id="3tw-RJ-eCa" customClass="SpeedModeViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Wu-oe-lOZ"/>
                         <viewControllerLayoutGuide type="bottom" id="dH0-o5-fl6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ipt-4Q-Rfc">
+                    <view key="view" contentMode="scaleToFill" id="ipt-4Q-Rfc" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD7-3B-9A8">
+                                <rect key="frame" x="259" y="28" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="eSw-wv-qCj" kind="modal" id="2Kq-g1-Nbx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZD7-3B-9A8" firstAttribute="top" secondItem="8Wu-oe-lOZ" secondAttribute="bottom" constant="93" id="ZWa-tK-YIl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZD7-3B-9A8" secondAttribute="leading" id="h0E-9p-mph"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acD-9r-pa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="153"/>
+            <point key="canvasLocation" x="599" y="141"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -120,6 +133,9 @@
                                 <color key="backgroundColor" red="0.74022841149999996" green="0.42019426519999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="棍王限时的跑"/>
+                                <connections>
+                                    <segue destination="3tw-RJ-eCa" kind="modal" id="Gl8-rP-bJG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDz-Nm-UMN" userLabel="DY#1">
                                 <rect key="frame" x="243" y="365" width="77" height="150"/>
@@ -369,7 +385,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MZR-1e-aW1"/>
         <segue reference="Bzs-in-MzM"/>
+        <segue reference="2Kq-g1-Nbx"/>
     </inferredMetricsTieBreakers>
 </document>

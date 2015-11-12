@@ -6,14 +6,35 @@
 //  Copyright © 2015 koofrank. All rights reserved.
 //
 
+
+//timing
+//timing and end/retry
+//score
+//faster
+
 import SpriteKit
 import SwiftHTTP
 import JSONJoy
+/*
 
+
+
+
+@IBAction func CountDownBegin(sender: UIButton) {
+display.text="60"
+remainingSeconds = 60
+isCounting = !isCounting
+}
+
+
+
+
+*/
 class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     var gameOver = false {
         willSet {
             if (newValue) {
+                isCounting = false
                 checkHighScoreAndStore()
                 let gameOverLayer = childNodeWithName(SpeedModeSceneChildName.GameOverLayerName.rawValue) as SKNode?
                 gameOverLayer?.runAction(SKAction.moveDistance(CGVectorMake(0, 100), fadeInWithDuration: 0.2))
@@ -27,10 +48,12 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     let StackMinWidth:CGFloat = 100.0
     let gravity:CGFloat = -100.0
     let StackGapMinWidth:Int = 80
-    let HeroSpeed:CGFloat = 760
+    var HeroSpeed:CGFloat = 600
     
-    let StoreScoreName = "com.stickHero.score"
+    let StoreScoreName = "com.SpeedMode.score"
     
+    var touchCounter:Double = 0
+    var isFirstTouch = false
     var isBegin = false
     var isEnd = false
     var leftStack:SKShapeNode?
@@ -49,6 +72,40 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
                 let tip = childNodeWithName(SpeedModeSceneChildName.TipName.rawValue) as? SKLabelNode
                 tip?.runAction(SKAction.fadeAlphaTo(0, duration: 0.4))
             }
+        }
+    }
+    
+    var timer: NSTimer?
+    var remainingSeconds: Int = 60{
+        willSet(newSeconds){
+            let timingBand = childNodeWithName(SpeedModeSceneChildName.TimerName.rawValue) as? SKLabelNode
+            timingBand!.text = "\(newSeconds)"
+        }
+    }
+    
+    var isCounting:Bool = false {
+        willSet(newValue){
+            if newValue{
+                timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimer:", userInfo: nil, repeats: true)
+            }else{
+                timer?.invalidate()
+                timer = nil
+            }
+            
+            
+        }
+    }
+    
+    func updateTimer(timer: NSTimer?){
+        remainingSeconds -= 1
+        if remainingSeconds <= 0{
+            isCounting = false
+            gameOver = true
+            let alert = UIAlertView()
+            alert.title = "Time's Up"
+            alert.message = ""
+            alert.addButtonWithTitle("OK")
+            alert.show()
         }
     }
     
@@ -100,11 +157,21 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
         
         if !isBegin && !isEnd {
             isBegin = true
+            touchCounter += 1
+            
+            if touchCounter == 1 {
+                isFirstTouch = true
+                isCounting = true
+                
+            }else{
+                isFirstTouch = false
+                HeroSpeed = HeroSpeed + 100
+            }
             
             let stick = loadStick()
             let hero = childNodeWithName(SpeedModeSceneChildName.HeroName.rawValue) as! SKSpriteNode
             
-            let action = SKAction.resizeToHeight(CGFloat(DefinedScreenHeight - StackHeight), duration: 1.5)
+            let action = SKAction.resizeToHeight(CGFloat(DefinedScreenHeight - StackHeight), duration: max(1.5 - (touchCounter-1) * 0.2 ,0.3))
             stick.runAction(action, withKey:SpeedModeSceneActionKey.StickGrowAction.rawValue)
             
             let scaleAction = SKAction.sequence([SKAction.scaleYTo(0.9, duration: 0.05), SKAction.scaleYTo(1, duration: 0.05)])
@@ -148,7 +215,7 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
         loadScore()
         loadTip()
         loadGameOverLayer()
-        
+        loadTimer()
         leftStack = loadStacks(false, startLeftPoint: playAbleRect.origin.x)
         self.removeMidTouch(false, left:true)
         loadHero()
@@ -164,8 +231,13 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
         //记录分数
         isBegin = false
         isEnd = false
+        isCounting = false
+        isFirstTouch = false
+        touchCounter = 0
         score = 0
+        remainingSeconds = 60
         nextLeftStartX = 0
+        HeroSpeed = 650
         removeAllChildren()
         start()
     }
@@ -341,6 +413,19 @@ private extension SpeedModeScene {
         scoreBand.horizontalAlignmentMode = .Center
         
         addChild(scoreBand)
+    }
+    
+    func loadTimer(){
+        let timingBand = SKLabelNode(fontNamed: "Arial")
+        timingBand.name = SpeedModeSceneChildName.TimerName.rawValue
+        timingBand.text = "60"
+        timingBand.position = CGPointMake(0, DefinedScreenHeight / 2 - 1400)
+        timingBand.fontColor = SKColor.blueColor()
+        timingBand.fontSize = 120
+        timingBand.zPosition = SpeedModeSceneZposition.TimerZposition.rawValue
+        timingBand.horizontalAlignmentMode = .Center
+        
+        addChild(timingBand)
     }
     
     func loadScoreBackground() {

@@ -72,48 +72,6 @@ class SpeedModeViewController: UIViewController {
         return true
     }
     
-    /*
-    var timer: NSTimer?
-    var remainingSeconds: Int = 60{
-    willSet(newSeconds){
-    self.display.text! = "\(newSeconds)"
-    }
-    }
-    
-    var isCounting:Bool = false {
-    willSet(newValue){
-    if newValue{
-    timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimer:", userInfo: nil, repeats: true)
-    }else{
-    timer?.invalidate()
-    timer = nil
-    }
-    
-    
-    }
-    }
-    
-    
-    
-    @IBAction func CountDownBegin(sender: UIButton) {
-    display.text="60"
-    remainingSeconds = 60
-    isCounting = !isCounting
-    }
-    
-    
-    
-    func updateTimer(timer: NSTimer?){
-    remainingSeconds -= 1
-    if remainingSeconds <= 0{
-    isCounting = false
-    let alert = UIAlertView()
-    alert.title = "Time's Up"
-    alert.message = ""
-    alert.addButtonWithTitle("OK")
-    alert.show()
-    }
-    }
-    */
+
     
 }
