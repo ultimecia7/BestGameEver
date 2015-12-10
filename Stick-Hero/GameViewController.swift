@@ -14,6 +14,12 @@ class GameViewController: UIViewController {
     var musicPlayer:AVAudioPlayer!
     var character:String!
     
+    @IBAction func normalback(sender: AnyObject) {
+        //TODO: send a request to sever
+        
+        self.performSegueWithIdentifier("normalback", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

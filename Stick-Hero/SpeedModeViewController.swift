@@ -13,6 +13,11 @@ import AVFoundation
 
 class SpeedModeViewController: UIViewController {
     
+    @IBAction func timeback(sender: AnyObject) {
+        //TODO: send a request to sever
+        
+        self.performSegueWithIdentifier("speedback", sender: self)
+    }
     
     @IBOutlet weak var display: UILabel!
     var musicPlayer:AVAudioPlayer!
