@@ -18,6 +18,7 @@ class SpeedModeViewController: UIViewController {
     var musicPlayer:AVAudioPlayer!
     var character:String!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(character)

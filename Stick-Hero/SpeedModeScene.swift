@@ -81,7 +81,11 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     var remainingSeconds: Int = 30{
         willSet(newSeconds){
             let timingBand = childNodeWithName(SpeedModeSceneChildName.TimerName.rawValue) as? SKLabelNode
-            timingBand!.text = "\(newSeconds)"
+            if newSeconds>0{
+            timingBand!.text = "\(newSeconds)"}
+            else{
+            timingBand!.text = "Time up!"
+            }
         }
     }
     
@@ -103,11 +107,14 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
         if remainingSeconds <= 0{
             isCounting = false
             gameOver = true
+            
+            /*
             let alert = UIAlertView()
             alert.title = "Time's Up"
             alert.message = ""
             alert.addButtonWithTitle("OK")
             alert.show()
+            */
         }
     }
     
@@ -191,7 +198,7 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
             let stick = loadStick()
             let hero = childNodeWithName(SpeedModeSceneChildName.HeroName.rawValue) as! SKSpriteNode
             
-            let action = SKAction.resizeToHeight(CGFloat(DefinedScreenHeight - StackHeight), duration: max(1.5 - (touchCounter-1) * 0.2 ,0.3))
+            let action = SKAction.resizeToHeight(CGFloat(DefinedScreenHeight - StackHeight), duration: max(1.8 - (touchCounter-1) * 0.2 ,0.5))
             stick.runAction(action, withKey:SpeedModeSceneActionKey.StickGrowAction.rawValue)
             
             let scaleAction = SKAction.sequence([SKAction.scaleYTo(0.9, duration: 0.05), SKAction.scaleYTo(1, duration: 0.05)])
