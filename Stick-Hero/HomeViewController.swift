@@ -27,6 +27,10 @@ class HomeViewController: UIViewController {
         let destinationVC = segue.destinationViewController as!GameViewController
         destinationVC.character = character
         }
+        else if (segue.identifier == "timewdy"){
+            let destinationVC = segue.destinationViewController as!SpeedModeViewController
+            destinationVC.character = character
+        }
     }
     
 

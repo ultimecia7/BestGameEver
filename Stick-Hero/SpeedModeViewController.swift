@@ -16,11 +16,13 @@ class SpeedModeViewController: UIViewController {
     
     @IBOutlet weak var display: UILabel!
     var musicPlayer:AVAudioPlayer!
+    var character:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(character)
         let scene = SpeedModeScene(size:CGSizeMake(DefinedScreenWidth, DefinedScreenHeight))
+        scene.Character = character
         
         // Configure the view.
         let skView = self.view as! SKView
