@@ -23,9 +23,11 @@ class LoginViewController: UIViewController {
         struct Response: JSONJoy {
             let status: String?
             let highscore: String?
+            let speedhighscore: String?
             init(_ decoder: JSONDecoder) {
                 status = decoder["status"].string
                 highscore = decoder["highscore"].string
+                speedhighscore = decoder["speedhighscore"].string
             }
         }
         
@@ -33,7 +35,7 @@ class LoginViewController: UIViewController {
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.102/test.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.102/login.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
@@ -45,6 +47,19 @@ class LoginViewController: UIViewController {
                 
                 
                 if (resp.status=="true") {
+                    let StoreScoreName = "com.stickHero.score"
+                    let StoreSpeedScoreName = "com.stickHero.speedscore"
+                    let hsVar1 : String = resp.highscore!
+                    let user_highscore:Int? = Int(hsVar1)
+                    NSUserDefaults.standardUserDefaults().setInteger(user_highscore!, forKey: StoreScoreName)
+                    NSUserDefaults.standardUserDefaults().synchronize()
+                    
+                    let hsVar2 : String = resp.speedhighscore!
+                    let user_speedhighscore:Int? = Int(hsVar2)
+                    NSUserDefaults.standardUserDefaults().setInteger(user_speedhighscore!, forKey: StoreSpeedScoreName)
+                    NSUserDefaults.standardUserDefaults().synchronize()
+
+                    
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
                     
