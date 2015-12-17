@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
                     print("highscore: \(resp.highscore!)")
                     
                     dispatch_async(dispatch_get_main_queue()) {
-                    self.performSegueWithIdentifier("login", sender: self)
+                    self.performSegueWithIdentifier("logintab", sender: self)
                     }
                 }
                 else{

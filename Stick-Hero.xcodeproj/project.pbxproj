@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D061F4E1C23264D007DD141 /* TabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D061F4D1C23264D007DD141 /* TabHomeViewController.swift */; };
 		0D100B2F1BED093D006A745C /* wdy_thin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2B1BED093D006A745C /* wdy_thin1.png */; };
 		0D100B301BED093D006A745C /* wdy_thin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2C1BED093D006A745C /* wdy_thin2.png */; };
 		0D100B311BED093D006A745C /* wdy_shoulder1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D100B2D1BED093D006A745C /* wdy_shoulder1.png */; };
@@ -154,6 +155,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D061F4D1C23264D007DD141 /* TabHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabHomeViewController.swift; sourceTree = "<group>"; };
 		0D100B2B1BED093D006A745C /* wdy_thin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_thin1.png; sourceTree = "<group>"; };
 		0D100B2C1BED093D006A745C /* wdy_thin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_thin2.png; sourceTree = "<group>"; };
 		0D100B2D1BED093D006A745C /* wdy_shoulder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy_shoulder1.png; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				0D7BCB211BEB679C00D2C7AD /* LoginViewController.swift */,
 				0DCD69D51BF4750D0053620D /* ScoreViewController.swift */,
 				5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */,
+				0D061F4D1C23264D007DD141 /* TabHomeViewController.swift */,
 				73B7AD651B33BEC400115CAD /* Assets.xcassets */,
 				73B7AD671B33BEC400115CAD /* LaunchScreen.storyboard */,
 				73B7AD6A1B33BEC400115CAD /* Info.plist */,
@@ -515,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7BCB221BEB679C00D2C7AD /* LoginViewController.swift in Sources */,
+				0D061F4E1C23264D007DD141 /* TabHomeViewController.swift in Sources */,
 				73B7AD611B33BEC400115CAD /* GameViewController.swift in Sources */,
 				0D7BCB261BEB682100D2C7AD /* SignupViewController.swift in Sources */,
 				5B0E179C1BF4BCF300EAD378 /* SpeedModeScene.swift in Sources */,
