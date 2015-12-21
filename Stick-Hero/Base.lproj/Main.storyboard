@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="757" y="2204"/>
         </scene>
-        <!--Signup View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="SignupViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yXa-YE-fWd"/>
                         <viewControllerLayoutGuide type="bottom" id="uaj-8Q-l7h"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <connections>
                         <segue destination="mOs-gs-txO" kind="modal" identifier="normalback" id="aaf-hT-Hcf"/>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="628"/>
+            <point key="canvasLocation" x="659" y="604"/>
         </scene>
         <!--Tab Home View Controller-->
         <scene sceneID="O0s-yC-xHU">
@@ -225,6 +225,15 @@
                                 <state key="normal" title="棍王普通地跑"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="modal" identifier="normalwdy" id="MSm-K8-AIL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-Kw-cy9">
+                                <rect key="frame" x="90" y="294" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.74022841149999996" green="0.42019426519999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="分享棍王到朋友圈"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="modal" id="2zv-qw-KTQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -474,6 +483,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aaf-hT-Hcf"/>
+        <segue reference="MSm-K8-AIL"/>
         <segue reference="1I9-9K-7f9"/>
     </inferredMetricsTieBreakers>
 </document>
