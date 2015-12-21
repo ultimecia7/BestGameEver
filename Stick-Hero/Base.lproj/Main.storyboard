@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="94" y="1363"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Contact View Controller-->
         <scene sceneID="h3P-aI-75a">
             <objects>
-                <tableViewController id="w39-7K-E37" sceneMemberID="viewController">
+                <tableViewController id="w39-7K-E37" customClass="ContactViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cg9-fc-UCV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="94" y="628"/>
         </scene>
-        <!--asd-->
+        <!--Score View Controller Scene-->
         <scene sceneID="REP-Gm-Bpn">
             <objects>
-                <viewController id="9oY-jQ-id9" customClass="ScoreViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Score View Controller Scene" id="9oY-jQ-id9" customClass="ScoreViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uP6-9y-jG5"/>
                         <viewControllerLayoutGuide type="bottom" id="p9e-Co-hYx"/>
@@ -131,20 +131,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd0-lr-9DP">
-                                <rect key="frame" x="50" y="168" width="221" height="115"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
-                                <state key="normal" title="as "/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-do-zMQ">
+                                <rect key="frame" x="59" y="179" width="203" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="asd" id="tdd-Ld-9d1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="highScore" destination="cdk-do-zMQ" id="LcC-H4-6wy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJY-sI-3FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="2204"/>
+            <point key="canvasLocation" x="68" y="2210"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="rVJ-1p-18v">
@@ -422,8 +426,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aaf-hT-Hcf"/>
-        <segue reference="1I9-9K-7f9"/>
         <segue reference="Rk8-c7-RJt"/>
+        <segue reference="1I9-9K-7f9"/>
     </inferredMetricsTieBreakers>
 </document>
