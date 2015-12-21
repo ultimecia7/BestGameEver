@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
         //TODO: send a request to sever
         
         self.performSegueWithIdentifier("normalback", sender: self)
+        
     }
     
     override func viewDidLoad() {

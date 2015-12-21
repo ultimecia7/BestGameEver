@@ -49,6 +49,7 @@ class LoginViewController: UIViewController {
                 if (resp.status=="true") {
                     let StoreScoreName = "com.stickHero.score"
                     let StoreSpeedScoreName = "com.stickHero.speedscore"
+                    let StoreLoginUser = "com.stickHero.user"
                     let hsVar1 : String = resp.highscore!
                     let user_highscore:Int? = Int(hsVar1)
                     NSUserDefaults.standardUserDefaults().setInteger(user_highscore!, forKey: StoreScoreName)
@@ -58,7 +59,11 @@ class LoginViewController: UIViewController {
                     let user_speedhighscore:Int? = Int(hsVar2)
                     NSUserDefaults.standardUserDefaults().setInteger(user_speedhighscore!, forKey: StoreSpeedScoreName)
                     NSUserDefaults.standardUserDefaults().synchronize()
-
+                    
+                    let userVar : String = self.username.text!
+                    NSUserDefaults.standardUserDefaults().setValue(userVar, forKey: StoreLoginUser)
+                    NSUserDefaults.standardUserDefaults().synchronize()
+                    
                     
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
