@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="94" y="1363"/>
         </scene>
-        <!--Contact View Controller-->
+        <!--Friends-->
         <scene sceneID="h3P-aI-75a">
             <objects>
                 <tableViewController id="w39-7K-E37" customClass="ContactViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                             <outlet property="delegate" destination="w39-7K-E37" id="V70-q6-xHU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="VAV-pq-bVg"/>
+                    <tabBarItem key="tabBarItem" title="Friends" selectedImage="friend.bmp" id="VAV-pq-bVg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U33-gP-EVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +140,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="asd" id="tdd-Ld-9d1"/>
+                    <tabBarItem key="tabBarItem" title="HighScore" selectedImage="highscore.bmp" id="tdd-Ld-9d1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="highScore" destination="cdk-do-zMQ" id="LcC-H4-6wy"/>
@@ -150,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="68" y="2210"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="rVJ-1p-18v">
             <objects>
                 <viewController id="eSw-wv-qCj" customClass="HomeViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JDz-Nm-UMN" secondAttribute="trailing" constant="-20" id="mdg-Jj-KJ1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="g6O-8i-S8n"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home.bmp" id="g6O-8i-S8n"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="DYNum1" destination="JDz-Nm-UMN" id="B83-aQ-ptM"/>
@@ -421,6 +421,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="friend.bmp" width="32" height="30"/>
+        <image name="highscore.bmp" width="33" height="30"/>
+        <image name="home.bmp" width="30" height="30"/>
         <image name="human1.png" width="77" height="150"/>
         <image name="wdy_shoulder1.png" width="77" height="150"/>
         <image name="wdy_thin1.png" width="77" height="150"/>
