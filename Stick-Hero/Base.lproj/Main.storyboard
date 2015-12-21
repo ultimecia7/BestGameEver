@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="94" y="628"/>
         </scene>
-        <!--Score View Controller-->
+        <!--asd-->
         <scene sceneID="REP-Gm-Bpn">
             <objects>
                 <viewController id="9oY-jQ-id9" customClass="ScoreViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,7 +139,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="tdd-Ld-9d1"/>
+                    <tabBarItem key="tabBarItem" title="asd" id="tdd-Ld-9d1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJY-sI-3FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -422,6 +422,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aaf-hT-Hcf"/>
         <segue reference="1I9-9K-7f9"/>
         <segue reference="Rk8-c7-RJt"/>
     </inferredMetricsTieBreakers>
