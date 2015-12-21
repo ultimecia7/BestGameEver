@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="757" y="2204"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="SignupViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yXa-YE-fWd"/>
                         <viewControllerLayoutGuide type="bottom" id="uaj-8Q-l7h"/>
@@ -278,6 +278,24 @@
             </objects>
             <point key="canvasLocation" x="757" y="1363"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="WJg-kc-VwT">
+            <objects>
+                <viewController id="W9b-IO-Wuy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p7v-Ot-dFE"/>
+                        <viewControllerLayoutGuide type="bottom" id="o1K-Cq-aoa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kIT-SF-GmP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JA3-9y-8Ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="1256"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="VzX-t2-MRh">
             <objects>
@@ -481,6 +499,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Rk8-c7-RJt"/>
+        <segue reference="aaf-hT-Hcf"/>
         <segue reference="1I9-9K-7f9"/>
     </inferredMetricsTieBreakers>
 </document>

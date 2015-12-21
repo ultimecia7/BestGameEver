@@ -13,7 +13,55 @@ import SwiftHTTP
 import JSONJoy
 
 class ContactViewController: UITableViewController{
+    /* search friend code snipplet
+    struct SearchResponse: JSONJoy{
+        let username : String?
+        init(_ decoder: JSONDecoder) {
+            username = decoder["username"].string
+        }
+    }
     
+    let param = ["username":"root"]
+    do {
+    let opt = try HTTP.POST("http://192.168.1.102/search_friend.php", parameters: param, requestSerializer: JSONParameterSerializer())
+    opt.start { response in
+    print(response.description)
+    if let error = response.error {
+    print("got an error: \(error)")
+    return
+    }
+    let resp = SearchResponse(JSONDecoder(response.data))
+    print(resp.username)
+    }
+    }
+    catch let error {
+        print("got an error creating the request: \(error)")
+    }
+    */
+    /*Check Request code snippet
+    struct CheckRequestResponse: JSONJoy{
+    
+    init(_ decoder: JSONDecoder) {
+    
+    }
+    }
+    
+    let param = ["username":"root"]
+    do {
+    let opt = try HTTP.POST("http://192.168.1.102/check_friend_request.php", parameters: param, requestSerializer: JSONParameterSerializer())
+    opt.start { response in
+    print(response.description)
+    if let error = response.error {
+    print("got an error: \(error)")
+    return
+    }
+    let resp = CheckRequestResponse(JSONDecoder(response.data))
+    }
+    }
+    catch let error {
+    print("got an error creating the request: \(error)")
+    }
+    */
     struct ArrayResponse: JSONJoy{
         let friendList: Array<JSONDecoder>?
         init(_ decoder: JSONDecoder) {
