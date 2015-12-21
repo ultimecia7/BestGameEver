@@ -16,15 +16,5 @@ class ContactTableViewCell : UITableViewCell {
     @IBOutlet weak var speedhigh: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        
-    }
     
 }
