@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareViewController: UIViewController {
+class ViewController: UIViewController {
     //发送给好友还是朋友圈（默认好友）
     var _scene = Int32(WXSceneSession.rawValue)
     
@@ -20,24 +20,23 @@ class ShareViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //切换发送给好友还是朋友圈
     @IBAction func changeScene(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             _scene = Int32(WXSceneSession.rawValue)
         }else{
             _scene = Int32(WXSceneTimeline.rawValue)
         }
-        
     }
     
-    @IBAction func SendTextContent(sender: AnyObject) {
+    //发送纯文本
+    @IBAction func sendTextContent(sender: AnyObject) {
         let req = SendMessageToWXReq()
         req.bText = true
         req.text = "hangge.com 做最好的开发者知识平台。"
         req.scene = _scene
         WXApi.sendReq(req)
-
     }
-    
     
     //发送图片
     @IBAction func sendImageContent(sender: AnyObject) {

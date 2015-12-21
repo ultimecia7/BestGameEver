@@ -28,7 +28,6 @@
 		353792161BEB9BC00002AB96 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 355301641BEB8E4100AB1C2E /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3553017A1BEB8E6300AB1C2E /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301771BEB8E5600AB1C2E /* JSONJoy.framework */; };
 		3553017B1BEB8E6300AB1C2E /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355301681BEB8E4100AB1C2E /* SwiftHTTP.framework */; };
-		35714CD61C283923004F5EE7 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35714CD51C283923004F5EE7 /* ShareViewController.swift */; };
 		35BA3EF31C27D5DF0091EAEC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA3EF21C27D5DF0091EAEC /* ContactViewController.swift */; };
 		35DC2E7A1C280C2800219949 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC2E791C280C2800219949 /* CoreTelephony.framework */; };
 		35DC2E7C1C280C3600219949 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC2E7B1C280C3600219949 /* SystemConfiguration.framework */; };
@@ -36,8 +35,6 @@
 		35DC2E801C280C6000219949 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC2E7F1C280C6000219949 /* libz.tbd */; };
 		35DC2E821C280C7100219949 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC2E811C280C7100219949 /* libsqlite3.0.tbd */; };
 		35F586051BD6813900A94329 /* wdy.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F586041BD6813900A94329 /* wdy.png */; };
-		35F9F3B91C28233E00A87307 /* SDK1.6.2 in Resources */ = {isa = PBXBuildFile; fileRef = 35F9F3B81C28233E00A87307 /* SDK1.6.2 */; };
-		35F9F3BB1C2826C400A87307 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F9F3BA1C2826C400A87307 /* libWeChatSDK.a */; };
 		5B0E179C1BF4BCF300EAD378 /* SpeedModeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E179B1BF4BCF300EAD378 /* SpeedModeScene.swift */; };
 		5B0E17A21BF4BD0B00EAD378 /* SpeedModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */; };
 		730ED6DE1B3BA3DA0041F888 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */; };
@@ -187,17 +184,12 @@
 		3553016B1BEB8E5600AB1C2E /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "JSONJoy-Swift-master/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
 		35BA3EF21C27D5DF0091EAEC /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		35DC2E781C280BB600219949 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bridge.h; path = "Stick-Hero/bridge.h"; sourceTree = "<group>"; };
-		35714CD51C283923004F5EE7 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		35BA3EF21C27D5DF0091EAEC /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		35DC2E791C280C2800219949 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		35DC2E7B1C280C3600219949 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		35DC2E7D1C280C4600219949 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		35DC2E7F1C280C6000219949 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		35DC2E811C280C7100219949 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		35F586041BD6813900A94329 /* wdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wdy.png; sourceTree = "<group>"; };
-		35F9F3B71C281DE500A87307 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
-		35F9F3B81C28233E00A87307 /* SDK1.6.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDK1.6.2; sourceTree = "<group>"; };
-		35F9F3BA1C2826C400A87307 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = SDK1.6.2/libWeChatSDK.a; sourceTree = "<group>"; };
 		5B0E179B1BF4BCF300EAD378 /* SpeedModeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedModeScene.swift; sourceTree = "<group>"; };
 		5B0E17A11BF4BD0B00EAD378 /* SpeedModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedModeViewController.swift; sourceTree = "<group>"; };
 		730ED6DD1B3BA3DA0041F888 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch_mid.wav; sourceTree = "<group>"; };
@@ -232,7 +224,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F9F3BB1C2826C400A87307 /* libWeChatSDK.a in Frameworks */,
 				35DC2E821C280C7100219949 /* libsqlite3.0.tbd in Frameworks */,
 				35DC2E801C280C6000219949 /* libz.tbd in Frameworks */,
 				35DC2E7E1C280C4600219949 /* libc++.tbd in Frameworks */,
@@ -339,9 +330,7 @@
 		73B7AD4E1B33BEC400115CAD = {
 			isa = PBXGroup;
 			children = (
-				35F9F3BA1C2826C400A87307 /* libWeChatSDK.a */,
-				35F9F3B81C28233E00A87307 /* SDK1.6.2 */,
-				35F9F3B71C281DE500A87307 /* bridge.h */,
+				35DC2E781C280BB600219949 /* bridge.h */,
 				35DC2E811C280C7100219949 /* libsqlite3.0.tbd */,
 				35DC2E7F1C280C6000219949 /* libz.tbd */,
 				35DC2E7D1C280C4600219949 /* libc++.tbd */,
@@ -372,7 +361,6 @@
 				73B7AD5A1B33BEC400115CAD /* AppDelegate.swift */,
 				73B7AD621B33BEC400115CAD /* Main.storyboard */,
 				73B7AD601B33BEC400115CAD /* GameViewController.swift */,
-				35714CD51C283923004F5EE7 /* ShareViewController.swift */,
 				35BA3EF21C27D5DF0091EAEC /* ContactViewController.swift */,
 				0D061F751C2808DD007DD141 /* ContactTableViewCell.swift */,
 				0D7BCB251BEB682100D2C7AD /* SignupViewController.swift */,
@@ -435,7 +423,7 @@
 				TargetAttributes = {
 					73B7AD561B33BEC400115CAD = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = ZVHZSC4J3Y;
+						DevelopmentTeam = 4C8Y4M27UL;
 					};
 				};
 			};
@@ -556,7 +544,6 @@
 				73B7AD641B33BEC400115CAD /* Main.storyboard in Resources */,
 				733263DD1B33C592003A3B2F /* victory.wav in Resources */,
 				731F6F581B3D17D000B8D89A /* highScore.wav in Resources */,
-				35F9F3B91C28233E00A87307 /* SDK1.6.2 in Resources */,
 				731F6F4C1B3D041600B8D89A /* button_retry_down.png in Resources */,
 				731F6F4A1B3D001100B8D89A /* button_retry_up.png in Resources */,
 				0D100B301BED093D006A745C /* wdy_thin2.png in Resources */,
@@ -582,7 +569,6 @@
 				73B7AD5B1B33BEC400115CAD /* AppDelegate.swift in Sources */,
 				730ED6E01B3BA6FD0041F888 /* Defined.swift in Sources */,
 				0D7BCB241BEB67F300D2C7AD /* HomeViewController.swift in Sources */,
-				35714CD61C283923004F5EE7 /* ShareViewController.swift in Sources */,
 				73DBBA9E1B39377D0050C4EF /* Tools.swift in Sources */,
 				0DCD69D61BF4750D0053620D /* ScoreViewController.swift in Sources */,
 			);
@@ -670,13 +656,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "/Users/ultimecia/Documents/Stick-Hero-Swift-master/SDK1.6.2";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -713,11 +695,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "/Users/ultimecia/Documents/Stick-Hero-Swift-master/SDK1.6.2";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "-Swift.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -731,11 +710,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SDK1.6.2",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -749,11 +724,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Stick-Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SDK1.6.2",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Stick-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

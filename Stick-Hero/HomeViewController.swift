@@ -79,19 +79,6 @@ class HomeViewController: UIViewController {
             character = "DY#3"
         }
     }
-    @IBAction func sendTextContent(sender: AnyObject) {
-         var _scene = Int32(WXSceneSession.rawValue)
-        let req = SendMessageToWXReq()
-        req.bText = true
-        let StoreScoreName = "com.stickHero.score"
-        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
-        var str = "我是王东源，我在玩 东！源！棍！王！ 我的最高分是："
-        str += String(highScore)
-        str += " 你也快来玩吧～～～"
-        req.text = str
-        req.scene = _scene
-        WXApi.sendReq(req)
-    }
     /*
     // MARK: - Navigation
 
