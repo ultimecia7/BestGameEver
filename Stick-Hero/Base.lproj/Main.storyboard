@@ -108,8 +108,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="w39-7K-E37" id="7MO-YP-hT8"/>
-                            <outlet property="delegate" destination="w39-7K-E37" id="2Wg-E5-Bqg"/>
+                            <outlet property="dataSource" destination="w39-7K-E37" id="jyU-HC-tWJ"/>
+                            <outlet property="delegate" destination="w39-7K-E37" id="V70-q6-xHU"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="VAV-pq-bVg"/>
@@ -422,7 +422,7 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0GU-hH-os8"/>
         <segue reference="1I9-9K-7f9"/>
+        <segue reference="Rk8-c7-RJt"/>
     </inferredMetricsTieBreakers>
 </document>
