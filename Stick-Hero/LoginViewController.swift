@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         
         
         do {
-            let opt = try HTTP.POST("http://192.168.1.102/login.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.107/login.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {

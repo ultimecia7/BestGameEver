@@ -371,7 +371,7 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
             let param = ["username":"\(user!)","highscore":"\(normalhighscore!)","speedhighscore":"\(score)"]
             
             do{
-                let opt = try HTTP.POST("http://192.168.1.102/update_highscore.php", parameters: param, requestSerializer: JSONParameterSerializer())
+                let opt = try HTTP.POST("http://192.168.1.107/update_highscore.php", parameters: param, requestSerializer: JSONParameterSerializer())
                 opt.start { response in
                     print(response.description)
                     if let error = response.error {

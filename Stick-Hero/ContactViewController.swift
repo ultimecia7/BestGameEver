@@ -13,55 +13,7 @@ import SwiftHTTP
 import JSONJoy
 
 class ContactViewController: UITableViewController {
-    /* search friend code snipplet
-    struct SearchResponse: JSONJoy{
-        let username : String?
-        init(_ decoder: JSONDecoder) {
-            username = decoder["username"].string
-        }
-    }
-    
-    let param = ["username":"root"]
-    do {
-    let opt = try HTTP.POST("http://192.168.1.102/search_friend.php", parameters: param, requestSerializer: JSONParameterSerializer())
-    opt.start { response in
-    print(response.description)
-    if let error = response.error {
-    print("got an error: \(error)")
-    return
-    }
-    let resp = SearchResponse(JSONDecoder(response.data))
-    print(resp.username)
-    }
-    }
-    catch let error {
-        print("got an error creating the request: \(error)")
-    }
-    */
-    /*Check Request code snippet
-    struct CheckRequestResponse: JSONJoy{
-    
-    init(_ decoder: JSONDecoder) {
-    
-    }
-    }
-    
-    let param = ["username":"root"]
-    do {
-    let opt = try HTTP.POST("http://192.168.1.102/check_friend_request.php", parameters: param, requestSerializer: JSONParameterSerializer())
-    opt.start { response in
-    print(response.description)
-    if let error = response.error {
-    print("got an error: \(error)")
-    return
-    }
-    let resp = CheckRequestResponse(JSONDecoder(response.data))
-    }
-    }
-    catch let error {
-    print("got an error creating the request: \(error)")
-    }
-    */
+
     struct ArrayResponse: JSONJoy{
         let friendList: Array<JSONDecoder>?
         init(_ decoder: JSONDecoder) {
@@ -86,13 +38,14 @@ class ContactViewController: UITableViewController {
 
     
     var friends = [ArrayElement]()
+    var test : [String] = ["aaa","bbbb"]
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    required init(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)!;
         let params = ["username":"root"]
         do {
-            let opt = try HTTP.POST("http://192.168.1.102/friend_info.php", parameters: params, requestSerializer: JSONParameterSerializer())
+            let opt = try HTTP.POST("http://192.168.1.107/friend_info.php", parameters: params, requestSerializer: JSONParameterSerializer())
             opt.start { response in
                 print(response.description)
                 if let error = response.error {
@@ -101,34 +54,50 @@ class ContactViewController: UITableViewController {
                 }
                 let resp = ArrayResponse(JSONDecoder(response.data))
                 for var friend in resp.friendList!{
-                     self.friends.append(ArrayElement(friend))
+                    self.friends.append(ArrayElement(friend))
                 }
+                self.tableView.reloadData()
                 print(self.friends)
             }
         }
         catch let error {
             print("got an error creating the request: \(error)")
         }
-        self.tableView.reloadData()
+
     }
     
-    override func viewWillAppear(animated: Bool) {
+    
+    override func viewDidLoad() {
         
+        
+        self.tableView.reloadData()
+        super.viewDidLoad()
+        print("asdhjashdkashdkashdkjhas")
+        print(self.friends.count)
     }
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return self.friends.count;
+        //return test.count
     }
     
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cellIdentifier : String = "friendItem"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ContactTableViewCell
-        var row = indexPath.row
-        let friend = self.friends[row]
         
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCustomCell", forIndexPath: indexPath) as! ContactTableViewCell
+
+        ///*
+        let friend = self.friends[indexPath.row]
         cell.user.text = friend.username!
         cell.normalhigh.text = friend.highscore!
         cell.speedhigh.text = friend.speed_highscore!
+        //*/
+        /*
+        let testcell = test[indexPath.row]
+        cell.user.text = testcell
+        */
+        print("asdasdasdcxvegfdgdfgfdgxcvw")
         return cell
     }
     
