@@ -187,7 +187,7 @@
 		356695B41C2811B000ECD30E /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		35BA3EF21C27D5DF0091EAEC /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		35DC2E711C27F65700219949 /* WeiXinShare2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WeiXinShare2; path = ../../Downloads/WeiXinShare2; sourceTree = "<group>"; };
-		35DC2E781C280BB600219949 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		35DC2E781C280BB600219949 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bridge.h; path = "Stick-Hero/bridge.h"; sourceTree = "<group>"; };
 		35DC2E791C280C2800219949 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		35DC2E7B1C280C3600219949 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		35DC2E7D1C280C4600219949 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -334,6 +334,7 @@
 		73B7AD4E1B33BEC400115CAD = {
 			isa = PBXGroup;
 			children = (
+				35DC2E781C280BB600219949 /* bridge.h */,
 				35DC2E811C280C7100219949 /* libsqlite3.0.tbd */,
 				35DC2E7F1C280C6000219949 /* libz.tbd */,
 				35DC2E7D1C280C4600219949 /* libc++.tbd */,
