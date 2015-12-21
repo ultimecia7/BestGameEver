@@ -51,6 +51,9 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     var HeroSpeed:CGFloat = 600
     
     let StoreScoreName = "com.SpeedMode.score"
+    let StoreSpeedScoreName = "com.stickHero.speedscore"
+    let StoreLoginUser = "com.stickHero.user"
+
     
     var Character = ""
     
@@ -354,12 +357,34 @@ class SpeedModeScene: SKScene, SKPhysicsContactDelegate {
     }
     
     private func checkHighScoreAndStore() {
-        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
+        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreSpeedScoreName)
         if (score > Int(highScore)) {
             showHighScore()
-            
-            NSUserDefaults.standardUserDefaults().setInteger(score, forKey: StoreScoreName)
+            NSUserDefaults.standardUserDefaults().setInteger(score, forKey: StoreSpeedScoreName)
             NSUserDefaults.standardUserDefaults().synchronize()
+            
+            
+            let user = NSUserDefaults.standardUserDefaults().valueForKey(StoreLoginUser)
+            let normalhighscore : Int? = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
+            
+            
+            let param = ["username":"\(user!)","highscore":"\(normalhighscore!)","speedhighscore":"\(score)"]
+            
+            do{
+                let opt = try HTTP.POST("http://192.168.1.102/update_highscore.php", parameters: param, requestSerializer: JSONParameterSerializer())
+                opt.start { response in
+                    print(response.description)
+                    if let error = response.error {
+                        print("got an error: \(error)")
+                        return
+                    }
+                }
+            }
+            catch let error {
+                print("got an error creating the request: \(error)")
+            }
+            
+            
         }
     }
     
@@ -431,7 +456,7 @@ private extension SpeedModeScene {
     func loadScore() {
         let scoreBand = SKLabelNode(fontNamed: "Arial")
         scoreBand.name = SpeedModeSceneChildName.ScoreName.rawValue
-        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
+        let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreSpeedScoreName)
         scoreBand.text = "HighScore:"+String(highScore)
         scoreBand.position = CGPointMake(0, DefinedScreenHeight / 2 - 200)
         scoreBand.fontColor = SKColor.whiteColor()

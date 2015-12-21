@@ -32,6 +32,9 @@ class StickHeroGameScene: SKScene, SKPhysicsContactDelegate {
     var Character = ""
     
     let StoreScoreName = "com.stickHero.score"
+    let StoreSpeedScoreName = "com.stickHero.speedscore"
+    let StoreLoginUser = "com.stickHero.user"
+
  
     var isBegin = false
     var isEnd = false
@@ -281,7 +284,24 @@ class StickHeroGameScene: SKScene, SKPhysicsContactDelegate {
             NSUserDefaults.standardUserDefaults().setInteger(score, forKey: StoreScoreName)
             NSUserDefaults.standardUserDefaults().synchronize()
             
+            let user = NSUserDefaults.standardUserDefaults().valueForKey(StoreLoginUser)
+            let speedhighscore : Int? = NSUserDefaults.standardUserDefaults().integerForKey(StoreSpeedScoreName)
             
+            let param = ["username":"\(user!)","highscore":"\(score)","speedhighscore":"\(speedhighscore!)"]
+            
+            do{
+                let opt = try HTTP.POST("http://192.168.1.102/update_highscore.php", parameters: param, requestSerializer: JSONParameterSerializer())
+                opt.start { response in
+                    print(response.description)
+                    if let error = response.error {
+                        print("got an error: \(error)")
+                        return
+                    }
+                }
+            }
+            catch let error {
+                print("got an error creating the request: \(error)")
+            }
         }
     }
     

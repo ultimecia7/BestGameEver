@@ -81,8 +81,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="eSw-wv-qCj" kind="relationship" relationship="viewControllers" id="5pP-G8-GKC"/>
-                        <segue destination="w39-7K-E37" kind="relationship" relationship="viewControllers" id="91x-1d-Z1p"/>
                         <segue destination="9oY-jQ-id9" kind="relationship" relationship="viewControllers" id="mdO-Xl-mUj"/>
+                        <segue destination="w39-7K-E37" kind="relationship" relationship="viewControllers" id="91x-1d-Z1p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJv-KQ-dsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,16 +93,16 @@
         <scene sceneID="h3P-aI-75a">
             <objects>
                 <tableViewController id="w39-7K-E37" customClass="ContactViewController" customModule="Stick_Hero" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cg9-fc-UCV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="cg9-fc-UCV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lBr-jF-Ae9">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="lBr-jF-Ae9">
+                                <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lBr-jF-Ae9" id="4aZ-Q4-eQu">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -112,7 +112,7 @@
                             <outlet property="delegate" destination="w39-7K-E37" id="V70-q6-xHU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Friends" selectedImage="friend.bmp" id="VAV-pq-bVg"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friend.png" selectedImage="friend.png" id="VAV-pq-bVg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U33-gP-EVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,18 +132,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-do-zMQ">
-                                <rect key="frame" x="59" y="179" width="203" height="107"/>
+                                <rect key="frame" x="59" y="136" width="203" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZH-Cd-pwb">
+                                <rect key="frame" x="38" y="136" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-XU-qeJ">
+                                <rect key="frame" x="38" y="294" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylq-xK-sP1">
+                                <rect key="frame" x="59" y="294" width="203" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o7-Ip-Bv8">
+                                <rect key="frame" x="20" y="20" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="HighScore" selectedImage="highscore.bmp" id="tdd-Ld-9d1"/>
+                    <tabBarItem key="tabBarItem" title="HighScore" image="highscore.png" selectedImage="highscore.png" id="tdd-Ld-9d1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="highScore" destination="cdk-do-zMQ" id="LcC-H4-6wy"/>
+                        <outlet property="speedHighScore" destination="Ylq-xK-sP1" id="3Q2-BG-ZcC"/>
+                        <outlet property="user" destination="8o7-Ip-Bv8" id="oDR-Bh-H9F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJY-sI-3FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +240,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JDz-Nm-UMN" secondAttribute="trailing" constant="-20" id="mdg-Jj-KJ1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home.png" id="g6O-8i-S8n"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" badgeValue="12" selectedImage="home.png" id="g6O-8i-S8n"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="DYNum1" destination="JDz-Nm-UMN" id="B83-aQ-ptM"/>
@@ -439,8 +465,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="friend.bmp" width="32" height="30"/>
-        <image name="highscore.bmp" width="33" height="30"/>
+        <image name="friend.png" width="32" height="30"/>
+        <image name="highscore.png" width="33" height="30"/>
         <image name="home.png" width="30" height="30"/>
         <image name="human1.png" width="77" height="150"/>
         <image name="wdy_shoulder1.png" width="77" height="150"/>
