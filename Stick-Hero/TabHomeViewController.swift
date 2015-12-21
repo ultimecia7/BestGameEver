@@ -12,12 +12,6 @@ import AVFoundation
 
 class TabHomeViewController: UITabBarController{
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.tabBarController?.selectedIndex = 2
-    }
+
     
 }

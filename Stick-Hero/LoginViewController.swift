@@ -64,7 +64,10 @@ class LoginViewController: UIViewController {
                     NSUserDefaults.standardUserDefaults().setValue(userVar, forKey: StoreLoginUser)
                     NSUserDefaults.standardUserDefaults().synchronize()
                     
+                    let userName = NSUserDefaults.standardUserDefaults().valueForKey(StoreLoginUser)
                     
+                    print(userName!)
+                    print(userVar)
                     print("status: \(resp.status!)")
                     print("highscore: \(resp.highscore!)")
                     
