@@ -248,9 +248,6 @@
                                 <color key="backgroundColor" red="0.74022841147956764" green="0.42019426524362791" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="棍王普通地跑"/>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="modal" identifier="normalwdy" id="MSm-K8-AIL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-Kw-cy9">
                                 <rect key="frame" x="90" y="294" width="140" height="30"/>
@@ -258,7 +255,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="分享棍王到朋友圈"/>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="modal" id="2zv-qw-KTQ"/>
+                                    <action selector="sendTextContent:" destination="eSw-wv-qCj" eventType="touchUpInside" id="ua0-1N-JL5"/>
                                 </connections>
                             </button>
                         </subviews>
