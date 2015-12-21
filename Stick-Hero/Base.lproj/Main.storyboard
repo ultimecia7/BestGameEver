@@ -422,7 +422,6 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aaf-hT-Hcf"/>
         <segue reference="1I9-9K-7f9"/>
         <segue reference="Rk8-c7-RJt"/>
     </inferredMetricsTieBreakers>
