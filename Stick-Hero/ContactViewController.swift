@@ -12,7 +12,7 @@ import AVFoundation
 import SwiftHTTP
 import JSONJoy
 
-class ContactViewController: UITableViewController{
+class ContactViewController: UITableViewController {
     /* search friend code snipplet
     struct SearchResponse: JSONJoy{
         let username : String?

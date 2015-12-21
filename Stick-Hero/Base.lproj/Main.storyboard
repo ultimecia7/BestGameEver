@@ -142,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U33-gP-EVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="628"/>
+            <point key="canvasLocation" x="80" y="628"/>
         </scene>
         <!--Score View Controller Scene-->
         <scene sceneID="REP-Gm-Bpn">
@@ -498,7 +498,6 @@
         <image name="wdy_thin1.png" width="77" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rk8-c7-RJt"/>
         <segue reference="aaf-hT-Hcf"/>
         <segue reference="1I9-9K-7f9"/>
     </inferredMetricsTieBreakers>
