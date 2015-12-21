@@ -37,6 +37,9 @@ class ContactViewController: UITableViewController{
     }
 
     
+    var friends = [ArrayElement]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let params = ["username":"root"]
@@ -50,19 +53,36 @@ class ContactViewController: UITableViewController{
                 }
                 let resp = ArrayResponse(JSONDecoder(response.data))
                 for var friend in resp.friendList!{
-                    let str = ArrayElement(friend)
-                    
+                     self.friends.append(ArrayElement(friend))
                 }
-                            }
+                print(self.friends)
+            }
         }
         catch let error {
             print("got an error creating the request: \(error)")
         }
-
+        self.tableView.reloadData()
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.tabBarController?.selectedIndex = 2
+        
     }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friends.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cellIdentifier : String = "friendItem"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ContactTableViewCell
+        var row = indexPath.row
+        let friend = self.friends[row]
+        
+        cell.user.text = friend.username!
+        cell.normalhigh.text = friend.highscore!
+        cell.speedhigh.text = friend.speed_highscore!
+        return cell
+    }
+    
     
 }
