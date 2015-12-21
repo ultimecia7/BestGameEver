@@ -214,7 +214,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JDz-Nm-UMN" secondAttribute="trailing" constant="-20" id="mdg-Jj-KJ1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home.bmp" id="g6O-8i-S8n"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home.png" id="g6O-8i-S8n"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="DYNum1" destination="JDz-Nm-UMN" id="B83-aQ-ptM"/>
@@ -423,7 +423,7 @@
     <resources>
         <image name="friend.bmp" width="32" height="30"/>
         <image name="highscore.bmp" width="33" height="30"/>
-        <image name="home.bmp" width="30" height="30"/>
+        <image name="home.png" width="30" height="30"/>
         <image name="human1.png" width="77" height="150"/>
         <image name="wdy_shoulder1.png" width="77" height="150"/>
         <image name="wdy_thin1.png" width="77" height="150"/>
