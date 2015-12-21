@@ -278,9 +278,10 @@ class StickHeroGameScene: SKScene, SKPhysicsContactDelegate {
         let highScore = NSUserDefaults.standardUserDefaults().integerForKey(StoreScoreName)
         if (score > Int(highScore)) {
             showHighScore()
-            
             NSUserDefaults.standardUserDefaults().setInteger(score, forKey: StoreScoreName)
             NSUserDefaults.standardUserDefaults().synchronize()
+            
+            
         }
     }
     

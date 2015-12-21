@@ -12,4 +12,9 @@ import AVFoundation
 
 class ScoreViewController: UIViewController {
     
+    @IBOutlet weak var highScore: UILabel!
+    
+    override func viewDidLoad() {
+        self.highScore.text = "hahahh"
+    }
 }
